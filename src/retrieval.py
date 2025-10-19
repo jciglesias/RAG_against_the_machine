@@ -25,10 +25,44 @@ class BM25Retriever:
     def tokenize(self, text: str) -> List[str]:
         tokens = re.findall(r'\b\w+\b', text.lower())
 
-        stopwords = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
-                     'of', 'with', 'by', 'from', 'as', 'is', 'was', 'are', 'were', 'be',
-                     'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will',
-                     'would', 'should', 'could', 'may', 'might', 'must', 'can'}
+        stopwords = {
+            'the',
+            'a',
+            'an',
+            'and',
+            'or',
+            'but',
+            'in',
+            'on',
+            'at',
+            'to',
+            'for',
+            'of',
+            'with',
+            'by',
+            'from',
+            'as',
+            'is',
+            'was',
+            'are',
+            'were',
+            'be',
+            'been',
+            'being',
+            'have',
+            'has',
+            'had',
+            'do',
+            'does',
+            'did',
+            'will',
+            'would',
+            'should',
+            'could',
+            'may',
+            'might',
+            'must',
+            'can'}
 
         tokens = [t for t in tokens if t not in stopwords and len(t) > 2]
 
@@ -64,7 +98,8 @@ class BM25Retriever:
         query_tokens = self.tokenize(query)
 
         scores = []
-        for idx, (tokens, doc_len) in enumerate(zip(self.tokenized_docs, self.doc_lens)):
+        for idx, (tokens, doc_len) in enumerate(
+                zip(self.tokenized_docs, self.doc_lens)):
             score = self._calculate_bm25_score(query_tokens, tokens, doc_len)
             scores.append((score, idx))
 
@@ -82,7 +117,11 @@ class BM25Retriever:
 
         return results
 
-    def _calculate_bm25_score(self, query_tokens: List[str], doc_tokens: List[str], doc_len: int) -> float:
+    def _calculate_bm25_score(
+            self,
+            query_tokens: List[str],
+            doc_tokens: List[str],
+            doc_len: int) -> float:
         score = 0.0
         doc_token_counts = Counter(doc_tokens)
 
@@ -139,10 +178,44 @@ class TFIDFRetriever:
     def tokenize(self, text: str) -> List[str]:
         tokens = re.findall(r'\b\w+\b', text.lower())
 
-        stopwords = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
-                     'of', 'with', 'by', 'from', 'as', 'is', 'was', 'are', 'were', 'be',
-                     'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will',
-                     'would', 'should', 'could', 'may', 'might', 'must', 'can'}
+        stopwords = {
+            'the',
+            'a',
+            'an',
+            'and',
+            'or',
+            'but',
+            'in',
+            'on',
+            'at',
+            'to',
+            'for',
+            'of',
+            'with',
+            'by',
+            'from',
+            'as',
+            'is',
+            'was',
+            'are',
+            'were',
+            'be',
+            'been',
+            'being',
+            'have',
+            'has',
+            'had',
+            'do',
+            'does',
+            'did',
+            'will',
+            'would',
+            'should',
+            'could',
+            'may',
+            'might',
+            'must',
+            'can'}
 
         tokens = [t for t in tokens if t not in stopwords and len(t) > 2]
 
@@ -212,7 +285,8 @@ class TFIDFRetriever:
 
         return results
 
-    def _cosine_similarity(self, vec1: Dict[str, float], vec2: Dict[str, float]) -> float:
+    def _cosine_similarity(
+            self, vec1: Dict[str, float], vec2: Dict[str, float]) -> float:
         common_terms = set(vec1.keys()) & set(vec2.keys())
 
         if not common_terms:

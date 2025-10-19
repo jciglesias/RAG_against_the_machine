@@ -50,7 +50,8 @@ class RAGSystem:
         print(f"Indexing completed in {elapsed_time:.2f} seconds")
 
     def search(self, query: str, k: int = DEFAULT_K):
-        if not hasattr(self.indexer.retriever, 'chunks') or not self.indexer.retriever.chunks:
+        if not hasattr(self.indexer.retriever,
+                       'chunks') or not self.indexer.retriever.chunks:
             print(f"Loading index from {self.index_path}")
             self.indexer.load_index(self.index_path)
 
@@ -64,10 +65,18 @@ class RAGSystem:
 
         for i, result in enumerate(results, 1):
             print(f"{i}. {result.file_path}")
-            print(f"   Characters {result.first_character_index}-{result.last_character_index}\n")
+            print(
+                f"   Characters {result.first_character_index}-"
+                f"{result.last_character_index}\n"
+            )
 
-    def search_dataset(self, dataset_path: str, k: int = DEFAULT_K, output_path: Optional[str] = None):
-        if not hasattr(self.indexer.retriever, 'chunks') or not self.indexer.retriever.chunks:
+    def search_dataset(
+            self,
+            dataset_path: str,
+            k: int = DEFAULT_K,
+            output_path: Optional[str] = None):
+        if not hasattr(self.indexer.retriever,
+                       'chunks') or not self.indexer.retriever.chunks:
             print(f"Loading index from {self.index_path}")
             self.indexer.load_index(self.index_path)
 
@@ -93,7 +102,10 @@ class RAGSystem:
                 retrieved_sources=results
             ))
 
-            print(f"Question {question.question_id}: {len(results)} results in {elapsed_time:.2f}s")
+            print(
+                f"Question {question.question_id}: {len(results)} results "
+                f"in {elapsed_time:.2f}s"
+            )
 
         output = StudentSearchResults(
             search_results=search_results,
@@ -112,7 +124,10 @@ class RAGSystem:
 
         print(f"\nResults saved to {output_path}")
 
-    def measure_recall_at_k_on_dataset(self, search_results_path: str, answered_questions_path: str):
+    def measure_recall_at_k_on_dataset(
+            self,
+            search_results_path: str,
+            answered_questions_path: str):
         print(f"Loading search results from {search_results_path}")
         with open(search_results_path, 'r') as f:
             search_data = json.load(f)
@@ -124,7 +139,9 @@ class RAGSystem:
             answer_data = json.load(f)
 
         dataset = RagDataset(**answer_data)
-        answered_questions = [q for q in dataset.rag_questions if isinstance(q, AnsweredQuestion)]
+        answered_questions = [
+            q for q in dataset.rag_questions if isinstance(
+                q, AnsweredQuestion)]
 
         print("\nEvaluating...")
         metrics = evaluate_dataset(
@@ -133,17 +150,23 @@ class RAGSystem:
             overlap_threshold=OVERLAP_THRESHOLD
         )
 
-        print("\n" + "="*50)
+        print("\n" + "=" * 50)
         print("Evaluation Results")
-        print("="*50)
+        print("=" * 50)
         print(f"Number of questions: {metrics['num_questions']}")
-        print(f"Average Recall@{search_results.k}: {metrics['average_recall_at_k']:.2%}")
+        print(
+            f"Average Recall@{search_results.k}: {metrics['average_recall_at_k']:.2%}")
         if 'min_recall' in metrics:
             print(f"Min Recall: {metrics['min_recall']:.2%}")
             print(f"Max Recall: {metrics['max_recall']:.2%}")
-        print("="*50)
+        print("=" * 50)
 
-    def answer_dataset(self, search_results_path: str, dataset_path: Optional[str] = None, output_path: Optional[str] = None, repo_path: Optional[str] = None):
+    def answer_dataset(
+            self,
+            search_results_path: str,
+            dataset_path: Optional[str] = None,
+            output_path: Optional[str] = None,
+            repo_path: Optional[str] = None):
         print(f"Loading search results from {search_results_path}")
         with open(search_results_path, 'r') as f:
             search_data = json.load(f)
@@ -165,12 +188,14 @@ class RAGSystem:
 
         answers = []
 
-        print(f"Generating answers for {len(search_results.search_results)} questions...")
+        print(
+            f"Generating answers for {len(search_results.search_results)} questions...")
 
         for i, result in enumerate(search_results.search_results, 1):
             start_time = time.time()
 
-            question_text = question_map.get(result.question_id, f"Question {result.question_id}")
+            question_text = question_map.get(
+                result.question_id, f"Question {result.question_id}")
 
             prioritized_sources = self.context_manager.prioritize_sources(
                 result.retrieved_sources,
@@ -193,7 +218,10 @@ class RAGSystem:
             )
             answers.append(answer)
 
-            print(f"  [{i}/{len(search_results.search_results)}] Generated answer in {elapsed_time:.2f}s")
+            print(
+                f"  [{i}/{len(search_results.search_results)}] "
+                f"Generated answer in {elapsed_time:.2f}s"
+            )
 
         output = StudentSearchResultsAndAnswer(
             search_results=answers,
@@ -213,7 +241,8 @@ class RAGSystem:
         print(f"\nAnswers saved to {output_path}")
 
     def answer(self, query: str, k: int = DEFAULT_K, repo_path: Optional[str] = None):
-        if not hasattr(self.indexer.retriever, 'chunks') or not self.indexer.retriever.chunks:
+        if not hasattr(self.indexer.retriever,
+                       'chunks') or not self.indexer.retriever.chunks:
             print(f"Loading index from {self.index_path}")
             self.indexer.load_index(self.index_path)
 
@@ -222,7 +251,7 @@ class RAGSystem:
         else:
             repo_path = VLLM_REPO_PATH
 
-        print(f"Searching for relevant sources...")
+        print("Searching for relevant sources...")
         start_search = time.time()
         results = self.indexer.retriever.search(query, k=k)
         search_time = time.time() - start_search
@@ -230,7 +259,10 @@ class RAGSystem:
         print(f"\nFound {len(results)} relevant sources in {search_time:.2f}s:")
         for i, result in enumerate(results, 1):
             print(f"  {i}. {result.file_path}")
-            print(f"     Characters {result.first_character_index}-{result.last_character_index}")
+            print(
+                f"     Characters {result.first_character_index}-"
+                f"{result.last_character_index}"
+            )
 
         prioritized_sources = self.context_manager.prioritize_sources(
             results,
@@ -238,7 +270,7 @@ class RAGSystem:
             query
         )
 
-        print(f"\nGenerating answer...")
+        print("Generating answer...")
         start_gen = time.time()
         answer_text = self.llm_generator.generate_answer(
             query,

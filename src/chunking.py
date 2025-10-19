@@ -26,27 +26,43 @@ class PythonCodeChunker:
             tree = ast.parse(code)
 
             for node in ast.iter_child_nodes(tree):
-                if isinstance(node, (ast.FunctionDef, ast.ClassDef, ast.AsyncFunctionDef)):
+                if isinstance(
+                    node,
+                    (ast.FunctionDef,
+                     ast.ClassDef,
+                     ast.AsyncFunctionDef)):
                     start_line = node.lineno - 1
                     end_line = node.end_lineno
 
                     lines = code.split('\n')
                     chunk_content = '\n'.join(lines[start_line:end_line])
 
-                    start_idx = len('\n'.join(lines[:start_line])) + (1 if start_line > 0 else 0)
+                    start_idx = len(
+                        '\n'.join(lines[:start_line])) + (1 if start_line > 0 else 0)
                     end_idx = start_idx + len(chunk_content)
 
                     if len(chunk_content) <= self.max_chunk_size:
-                        chunks.append(Chunk(chunk_content, file_path, start_idx, end_idx))
+                        chunks.append(
+                            Chunk(
+                                chunk_content,
+                                file_path,
+                                start_idx,
+                                end_idx))
                     else:
-                        chunks.extend(self._split_large_chunk(chunk_content, file_path, start_idx))
+                        chunks.extend(
+                            self._split_large_chunk(
+                                chunk_content, file_path, start_idx))
 
         except SyntaxError:
             chunks = self._simple_chunk(code, file_path)
 
         return chunks
 
-    def _split_large_chunk(self, content: str, file_path: str, start_idx: int) -> List[Chunk]:
+    def _split_large_chunk(
+            self,
+            content: str,
+            file_path: str,
+            start_idx: int) -> List[Chunk]:
         chunks = []
         lines = content.split('\n')
         current_chunk = []
@@ -59,7 +75,12 @@ class PythonCodeChunker:
             if current_size + line_size > self.max_chunk_size and current_chunk:
                 chunk_content = '\n'.join(current_chunk)
                 chunk_end_idx = chunk_start_idx + len(chunk_content)
-                chunks.append(Chunk(chunk_content, file_path, chunk_start_idx, chunk_end_idx))
+                chunks.append(
+                    Chunk(
+                        chunk_content,
+                        file_path,
+                        chunk_start_idx,
+                        chunk_end_idx))
 
                 chunk_start_idx = chunk_end_idx + 1
                 current_chunk = []
@@ -71,7 +92,12 @@ class PythonCodeChunker:
         if current_chunk:
             chunk_content = '\n'.join(current_chunk)
             chunk_end_idx = chunk_start_idx + len(chunk_content)
-            chunks.append(Chunk(chunk_content, file_path, chunk_start_idx, chunk_end_idx))
+            chunks.append(
+                Chunk(
+                    chunk_content,
+                    file_path,
+                    chunk_start_idx,
+                    chunk_end_idx))
 
         return chunks
 
@@ -136,7 +162,8 @@ class DocumentationChunker:
 
         return sections
 
-    def _split_with_overlap(self, content: str, file_path: str, base_start_idx: int) -> List[Chunk]:
+    def _split_with_overlap(self, content: str, file_path: str,
+                            base_start_idx: int) -> List[Chunk]:
         chunks = []
         sentences = self._split_sentences(content)
 
@@ -150,7 +177,12 @@ class DocumentationChunker:
             if current_size + sentence_size > self.max_chunk_size and current_chunk:
                 chunk_content = ''.join(current_chunk)
                 chunk_end_idx = chunk_start_idx + len(chunk_content)
-                chunks.append(Chunk(chunk_content, file_path, chunk_start_idx, chunk_end_idx))
+                chunks.append(
+                    Chunk(
+                        chunk_content,
+                        file_path,
+                        chunk_start_idx,
+                        chunk_end_idx))
 
                 overlap_size = 0
                 overlap_sentences = []
@@ -171,7 +203,12 @@ class DocumentationChunker:
         if current_chunk:
             chunk_content = ''.join(current_chunk)
             chunk_end_idx = chunk_start_idx + len(chunk_content)
-            chunks.append(Chunk(chunk_content, file_path, chunk_start_idx, chunk_end_idx))
+            chunks.append(
+                Chunk(
+                    chunk_content,
+                    file_path,
+                    chunk_start_idx,
+                    chunk_end_idx))
 
         return chunks
 

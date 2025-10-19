@@ -18,11 +18,16 @@ class Indexer:
         else:
             raise ValueError(f"Unknown retrieval method: {retrieval_method}")
 
-    def index_repository(self, repo_path: Path = VLLM_REPO_PATH, selective_files: Optional[List[str]] = None):
+    def index_repository(self, repo_path: Path = VLLM_REPO_PATH,
+                         selective_files: Optional[List[str]] = None):
         print(f"Indexing repository: {repo_path}")
 
         if selective_files:
-            files_to_index = [repo_path / f for f in selective_files if (repo_path / f).exists()]
+            files_to_index = [
+                repo_path /
+                f for f in selective_files if (
+                    repo_path /
+                    f).exists()]
         else:
             files_to_index = self._collect_files(repo_path)
 

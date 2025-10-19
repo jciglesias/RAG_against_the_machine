@@ -12,7 +12,11 @@ class LLMGenerator:
         self.model = model
         self.max_context_chars = max_context_chars
 
-    def generate_answer(self, question: str, sources: List[MinimalSource], repo_path: Path) -> str:
+    def generate_answer(
+            self,
+            question: str,
+            sources: List[MinimalSource],
+            repo_path: Path) -> str:
         context = self._build_context(sources, repo_path)
 
         prompt = self._create_prompt(question, context)
@@ -37,15 +41,27 @@ class LLMGenerator:
                 with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                     content = f.read()
 
-                chunk = content[source.first_character_index:source.last_character_index]
+                chunk = content[
+                    source.first_character_index:source.last_character_index
+                ]
 
-                source_text = f"\n--- Source {i+1}: {source.file_path} ---\n{chunk}\n"
+                source_text = (
+                    f"\n--- Source {i+1}: {source.file_path} ---\n{chunk}\n"
+                )
 
-                if current_length + len(source_text) > self.max_context_chars:
-                    available_space = self.max_context_chars - current_length - 100
+                if current_length + len(source_text) > \
+                        self.max_context_chars:
+                    available_space = (
+                        self.max_context_chars - current_length - 100
+                    )
                     if available_space > 200:
-                        chunk_truncated = chunk[:available_space] + "\n[... truncated ...]"
-                        source_text = f"\n--- Source {i+1}: {source.file_path} ---\n{chunk_truncated}\n"
+                        chunk_truncated = (
+                            chunk[:available_space] + "\n[... truncated ...]"
+                        )
+                        source_text = (
+                            f"\n--- Source {i+1}: {source.file_path} ---\n"
+                            f"{chunk_truncated}\n"
+                        )
                         context_parts.append(source_text)
                     break
 
@@ -59,9 +75,11 @@ class LLMGenerator:
         return ''.join(context_parts)
 
     def _create_prompt(self, question: str, context: str) -> str:
-        prompt = f"""You are a helpful AI assistant that answers questions about the vLLM codebase.
+        prompt = f"""You are a helpful AI assistant that answers questions \
+about the vLLM codebase.
 
-Based on the following code and documentation snippets, please answer the question accurately and concisely.
+Based on the following code and documentation snippets, please answer the \
+question accurately and concisely.
 
 Question: {question}
 
@@ -106,16 +124,25 @@ Answer:"""
                 return result.stdout.strip()
             else:
                 error_msg = result.stderr or "Unknown error"
-                return f"Error calling Ollama: {error_msg}"
+                return (
+                    f"Error calling Ollama: {error_msg}"
+                )
 
         except FileNotFoundError:
-            return "Error: Ollama not found. Please install ollama or use a different model."
+            return (
+                "Error: Ollama not found. Please install ollama or "
+                "use a different model."
+            )
         except subprocess.TimeoutExpired:
             return "Error: Ollama request timed out (30s limit)"
         except Exception as e:
             return f"Error calling Ollama: {str(e)}"
 
-    def _call_openai_compatible(self, prompt: str, api_url: str, api_key: Optional[str] = None) -> str:
+    def _call_openai_compatible(
+            self,
+            prompt: str,
+            api_url: str,
+            api_key: Optional[str] = None) -> str:
         import requests
 
         headers = {"Content-Type": "application/json"}
@@ -168,7 +195,9 @@ class ContextManager:
                 if not file_path.exists():
                     continue
 
-                chunk_size = source.last_character_index - source.first_character_index
+                chunk_size = (
+                    source.last_character_index - source.first_character_index
+                )
 
                 if total_size + chunk_size <= self.max_context_chars:
                     prioritized.append(source)
@@ -179,7 +208,9 @@ class ContextManager:
                         truncated = MinimalSource(
                             file_path=source.file_path,
                             first_character_index=source.first_character_index,
-                            last_character_index=source.first_character_index + remaining
+                            last_character_index=(
+                                source.first_character_index + remaining
+                            )
                         )
                         prioritized.append(truncated)
                     break
