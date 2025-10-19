@@ -1,0 +1,3404 @@
+{
+  "rag_questions": [
+    {
+      "question_id": "f7131367-ce05-422c-bc7a-4ac1ccba3906",
+      "question": "What command is used to start the vLLM OpenAI-compatible server?"
+    },
+    {
+      "question_id": "8a4f0d4a-642b-42cc-b155-6b04fc61043c",
+      "question": "What command is used to start the vLLM OpenAI-compatible server?"
+    },
+    {
+      "question_id": "ee7dd3b2-1876-4f32-acb2-d035d60a2751",
+      "question": "What command do you use to start vLLM's OpenAI-compatible server?"
+    },
+    {
+      "question_id": "d297256a-e394-4fb9-993e-c15bdf5f5967",
+      "question": "What OpenAI-compatible APIs does vLLM support for serving models?"
+    },
+    {
+      "question_id": "64d8f843-36a7-4834-bdf3-4ee8d6f53bfa",
+      "question": "What parameter can be used to manually specify a chat template for models that don't provide one in vLLM?"
+    },
+    {
+      "question_id": "28f46b79-a7c5-4be4-9146-a3308b764fd1",
+      "question": "What command is used to start the vLLM OpenAI-compatible server?"
+    },
+    {
+      "question_id": "387c46e2-ab97-41d1-9b70-279404d5c845",
+      "question": "What OpenAI APIs are supported by vLLM's OpenAI compatible server?"
+    },
+    {
+      "question_id": "8288d7ee-373a-449d-9168-9f9afd74d6a2",
+      "question": "What parameter should be used to manually specify a chat template for vLLM models that don't provide one?"
+    },
+    {
+      "question_id": "a547455a-6069-4a32-b2b0-9e727dedfbae",
+      "question": "What CLI argument can be used to override the chat template content format in vLLM's OpenAI compatible server?"
+    },
+    {
+      "question_id": "1b466d38-d086-4a8a-ae85-236d227b0c1c",
+      "question": "What HTTP request header is currently supported by vLLM's OpenAI compatible server?"
+    },
+    {
+      "question_id": "8e937b74-eb3a-4942-8e21-5a1159a1f175",
+      "question": "What OpenAI APIs are supported by vLLM's OpenAI-compatible server?"
+    },
+    {
+      "question_id": "e15e904e-d2e8-497c-8efa-05bae60ec026",
+      "question": "What Python client can be used to interact with vLLM's Embeddings API?"
+    },
+    {
+      "question_id": "d8d09104-e403-4549-8caa-17f08588d9d8",
+      "question": "Why do you need to pass --runner pooling when serving VLM2Vec-Full with vLLM?"
+    },
+    {
+      "question_id": "22777170-ee96-4628-89f2-2c0e94fd7f20",
+      "question": "What runner parameter is required when serving the DSE-Qwen2-MRL model in vLLM?"
+    },
+    {
+      "question_id": "5179c650-3f68-4e07-b9db-97567be60f7f",
+      "question": "What does vLLM's Classification API do with transformer models that are not sequence-classification models?"
+    },
+    {
+      "question_id": "3ea21165-0dc8-460f-9353-35c42abc69f1",
+      "question": "What are the two ways to format input when making requests to vLLM's classify endpoint?"
+    },
+    {
+      "question_id": "67803f40-d6ed-4413-ac99-4c056e6889f8",
+      "question": "What extra parameters are supported for classification tasks in vLLM's OpenAI compatible server?"
+    },
+    {
+      "question_id": "42c0a560-3fcb-41cb-a923-e07ae07b4c6d",
+      "question": "How do you perform batch inference with the vLLM scoring endpoint?"
+    },
+    {
+      "question_id": "c6327cef-c889-49f9-95c7-92590824567a",
+      "question": "What is the object type returned in the response data array for vLLM's reranking API?"
+    },
+    {
+      "question_id": "d30ed96e-b7a7-4700-8bf5-d1f162ff3f5c",
+      "question": "How do you serve the JinaVL-Reranker model using vLLM?"
+    },
+    {
+      "question_id": "96545d62-75cf-4a1d-8a55-7d768020f5b2",
+      "question": "What is the default value for the top_n parameter in vLLM's rerank API endpoint?"
+    },
+    {
+      "question_id": "f17a76af-6ca5-4fee-b80f-8f969e6c2585",
+      "question": "What are the key capabilities of Ray Serve LLM for vLLM deployment?"
+    },
+    {
+      "question_id": "3c96f00c-8e44-4a69-a507-b97bb9283320",
+      "question": "What CPU variants does vLLM support for installation?"
+    },
+    {
+      "question_id": "da3da711-92fa-4296-9e9f-7e3f3b5cf0f6",
+      "question": "What CPU architectures are supported for building vLLM Docker images from source?"
+    },
+    {
+      "question_id": "b301a328-f60e-45aa-a012-5ffec5cf4e06",
+      "question": "What is the default value for VLLM_CPU_KVCACHE_SPACE in vLLM CPU installation?"
+    },
+    {
+      "question_id": "8de3688d-c1ce-448a-9cd2-629881b0cca7",
+      "question": "What dtype is recommended for vLLM CPU to avoid performance or accuracy problems?"
+    },
+    {
+      "question_id": "461b628d-eaa0-49b5-bfc0-ca7b5d1aa4fe",
+      "question": "What is the recommended VLLM_CPU_OMP_THREADS_BIND setting for most vLLM CPU installations?"
+    },
+    {
+      "question_id": "70fae9e4-2fd8-48cb-8fed-4e5fc40c4eb9",
+      "question": "What environment variable should be set to bind OpenMP threads to specific CPU cores when using vLLM CPU backend?"
+    },
+    {
+      "question_id": "c3e082a3-4efb-47e0-bb9c-cc8fb90bd076",
+      "question": "What is the default value for VLLM_CPU_KVCACHE_SPACE in vLLM CPU installation?"
+    },
+    {
+      "question_id": "3e7873ce-9d83-4d41-876d-6bb8bde7cb34",
+      "question": "What quantization methods are supported by vLLM CPU?"
+    },
+    {
+      "question_id": "1df8385a-0c7d-4294-9d6b-f37f3330261a",
+      "question": "What are the two required fields for multi-modal data input in vLLM offline inference?"
+    },
+    {
+      "question_id": "4fbb35dc-756c-4ba0-8624-ff279e884828",
+      "question": "How do you pass image data to vLLM for multimodal inference?"
+    },
+    {
+      "question_id": "3896cbb0-96b0-4225-b604-6914aba31403",
+      "question": "How do you pass multiple images to vLLM's LLM.chat method?"
+    },
+    {
+      "question_id": "e0edeaff-0a8a-4c17-946d-031a8d585aec",
+      "question": "How can multi-image input be extended for video captioning in vLLM?"
+    },
+    {
+      "question_id": "d8314ab9-8042-4492-ac39-416b95529546",
+      "question": "What data types can be passed to the 'video' field in vLLM's multi-modal dictionary for video inputs?"
+    },
+    {
+      "question_id": "451afbac-b40a-474f-880e-2bb73bd4ce8c",
+      "question": "Which models support the process_vision_info function in vLLM?"
+    },
+    {
+      "question_id": "598c5d47-56a5-4cc6-8c01-fab2b02c221d",
+      "question": "How do you pass audio inputs to vLLM for multimodal inference?"
+    },
+    {
+      "question_id": "f6cc8702-f9c2-4ab3-9626-34f50a35a90d",
+      "question": "What shape should the tensor have when passing pre-computed embeddings directly to a language model in vLLM?"
+    },
+    {
+      "question_id": "80422c05-4f6d-4cbd-8ab6-67a40941e129",
+      "question": "How do you access the generated text from vLLM outputs when using multimodal inputs?"
+    },
+    {
+      "question_id": "27d9dd8a-d3f6-41a1-9b24-fca8b695466e",
+      "question": "What is required to use the Chat Completions API in vLLM's OpenAI-compatible server?"
+    },
+    {
+      "question_id": "479d0295-5134-43ed-81d9-72e7141dcf1f",
+      "question": "How do you launch a vLLM server for the Phi-3.5-Vision model with image input support?"
+    },
+    {
+      "question_id": "81b3c5d2-dbe3-4de1-bf01-dcab837c1b6c",
+      "question": "How do you set a black background for dark theme when serving a LLaVA model with vLLM?"
+    },
+    {
+      "question_id": "05039fa7-240d-4ec6-85ae-f968f1b78cd9",
+      "question": "What API standard does vLLM follow for audio input support?"
+    },
+    {
+      "question_id": "0c4c7a5b-9949-4618-bf4d-0d945684a9ac",
+      "question": "What is the default timeout for fetching audio files through HTTP URL in vLLM?"
+    },
+    {
+      "question_id": "c01049a5-927f-425c-9ce1-5d63651d00fa",
+      "question": "How do you pass image embeddings to vLLM's OpenAI server?"
+    },
+    {
+      "question_id": "d448533e-d511-4228-90d8-44587aef225f",
+      "question": "Are deprecated features allowed to be removed in patch releases in vLLM?"
+    },
+    {
+      "question_id": "2cd103fb-6027-4339-9e70-75ec2c029f7c",
+      "question": "What conditions cause the add_arguments method in vLLM's argparse generator to skip processing an action?"
+    },
+    {
+      "question_id": "d566de60-57f6-406c-8dd9-c9d2f878b81f",
+      "question": "What types of models does vLLM support?"
+    },
+    {
+      "question_id": "3451b521-99a9-407b-bbe5-8f790249ccfd",
+      "question": "Where can I find the implementation of models that vLLM natively supports?"
+    },
+    {
+      "question_id": "6866fbf1-f8aa-406d-8422-b14b6d87ada6",
+      "question": "How can you check if vLLM is using the Transformers modeling backend?"
+    },
+    {
+      "question_id": "3d27181a-111e-494e-814d-eac1ca107fe1",
+      "question": "What parameter should be set to true when using custom models from Hugging Face Model Hub in vLLM?"
+    },
+    {
+      "question_id": "3620bb65-9be5-4959-88b6-74552f6e3be2",
+      "question": "What three requirements must a custom model meet to be compatible with vLLM's Transformers backend?"
+    },
+    {
+      "question_id": "d2e38e3b-f0ff-48cb-be7c-14c0beae267f",
+      "question": "What tensor parallel styles are supported for base_model_tp_plan in vLLM model configuration?"
+    },
+    {
+      "question_id": "d56e34ca-85e9-4199-b4b7-24f6440318f5",
+      "question": "How can you check if a model is natively supported in vLLM?"
+    },
+    {
+      "question_id": "734df3e4-78cd-4d03-b5d1-94a01133defa",
+      "question": "How do you download a model using the Hugging Face CLI?"
+    },
+    {
+      "question_id": "4357ffe0-6453-42f4-89b9-bc092e7c5fcb",
+      "question": "How do you configure vLLM to use ModelScope instead of Hugging Face Hub?"
+    },
+    {
+      "question_id": "dae658de-6a17-49cb-aca2-1f884a983668",
+      "question": "What types of language models are listed in the vLLM supported models documentation?"
+    },
+    {
+      "question_id": "510fb2aa-23b6-4345-8436-8f99a7c36ed7",
+      "question": "What APIs do text generation models support in vLLM?"
+    },
+    {
+      "question_id": "1c8c4c31-340c-413e-a6eb-7010f2c10e8b",
+      "question": "Which vLLM model architectures support LoRA fine-tuning?"
+    },
+    {
+      "question_id": "012fd836-dff3-48b2-bcf7-7ed7af26408c",
+      "question": "What model classes are supported for DeepSeek models in vLLM?"
+    },
+    {
+      "question_id": "efa50722-19a6-44a2-ab89-e554eb436899",
+      "question": "What model architectures does vLLM support for GPT-2 models?"
+    },
+    {
+      "question_id": "90cb7d82-774d-4bdd-8e48-acac287ba2aa",
+      "question": "Which vLLM model architectures support tensor parallelism for the Llama family of models?"
+    },
+    {
+      "question_id": "872376f1-6ca1-46a1-88ee-a201a04e667e",
+      "question": "Which vLLM model architectures support tensor parallelism for Mistral and Mixtral models?"
+    },
+    {
+      "question_id": "75463563-0d19-47d6-a1b2-3dd6730b9611",
+      "question": "Which Qwen model architectures are supported by vLLM?"
+    },
+    {
+      "question_id": "dbeee18d-712b-4fb6-8ab7-96a2190ac1e1",
+      "question": "What is the maximum context length supported for Mistral and Mixtral models on the ROCm version of vLLM?"
+    },
+    {
+      "question_id": "c3eb53e3-5bf9-46d3-87a7-74afde083bf5",
+      "question": "How do you ensure a model is used in pooling mode instead of generative mode in vLLM?"
+    },
+    {
+      "question_id": "11fec89b-e136-42a6-bc05-b782a502d1c6",
+      "question": "What API do vLLM embedding models primarily support?"
+    },
+    {
+      "question_id": "1626870c-a61f-42d3-b05e-4ee02991fa49",
+      "question": "What special configuration is needed for ssmits/Qwen2-7B-Instruct-embed-base model in vLLM?"
+    },
+    {
+      "question_id": "f5ac8e61-a0e6-447e-843a-8f2dc8d1e632",
+      "question": "How do you load the official original mxbai-rerank-v2 model in vLLM?"
+    },
+    {
+      "question_id": "a00140f5-12ea-41b8-a249-b4b2b0f1898d",
+      "question": "What API do reward modeling models in vLLM primarily support?"
+    },
+    {
+      "question_id": "5db99143-9aea-402d-9ab1-98b3e75c598c",
+      "question": "How do you enable multiple multi-modal items per text prompt in vLLM V0?"
+    },
+    {
+      "question_id": "0ab069e6-4d28-47e9-ab5a-f14ea070d6ac",
+      "question": "Where can I find information about how to use generative models in vLLM?"
+    },
+    {
+      "question_id": "8f30c5e8-ae3a-4d8c-abfd-743242c0fd18",
+      "question": "What APIs do text generation models support in vLLM?"
+    },
+    {
+      "question_id": "505a6980-0cd1-48ae-a939-fff0c5fa6bc0",
+      "question": "Which multimodal models in vLLM support LoRA fine-tuning?"
+    },
+    {
+      "question_id": "a5a81bf6-0113-4408-b92c-0ad9c9ca9405",
+      "question": "What multimodal capabilities does the GLM-4.5V model support in vLLM?"
+    },
+    {
+      "question_id": "e01e2345-a96c-4089-95e5-d16ea2faafed",
+      "question": "What types of input modalities does the MiniCPM-O model support in vLLM?"
+    },
+    {
+      "question_id": "2adf7274-84f7-431e-9b20-28d79ee17d0a",
+      "question": "What modalities does the Qwen2.5-Omni model support in vLLM?"
+    },
+    {
+      "question_id": "451d72eb-df1d-4ca7-b9fd-8c14f3a5e44a",
+      "question": "What model architectures support video input in vLLM's supported models?"
+    },
+    {
+      "question_id": "ef109159-78ad-46fe-a387-65470129965c",
+      "question": "What input types does the Emu3 model support in vLLM?"
+    },
+    {
+      "question_id": "50fb9423-0a15-40e4-99ec-a8ac86f9f946",
+      "question": "What attention pattern does vLLM V1 currently use for multimodal models with image tokens?"
+    },
+    {
+      "question_id": "82628ee8-dbd1-4c3a-91f4-2660722af0ec",
+      "question": "What is the minimum version of flash-attn required for vLLM?"
+    },
+    {
+      "question_id": "2de899b9-a461-4422-a8fe-14bfdf088176",
+      "question": "What are the supported Speech2Text model architectures in vLLM for automatic speech recognition?"
+    },
+    {
+      "question_id": "622402c5-9a0a-4b0a-bfb7-9c30a0da23be",
+      "question": "What API do embedding models primarily support in vLLM?"
+    },
+    {
+      "question_id": "847b2121-254f-49b2-af71-4dc875a14f92",
+      "question": "What API do cross-encoder and reranker models primarily support in vLLM?"
+    },
+    {
+      "question_id": "f2d503b2-83d5-4178-9bbf-7f73fb234cf1",
+      "question": "What is vLLM's approach to third-party model support?"
+    },
+    {
+      "question_id": "b721a381-5dc8-4a34-a4e3-fe5b12f52df5",
+      "question": "What directory should users monitor to track changes in vLLM models?"
+    },
+    {
+      "question_id": "226f9ddd-fa01-468c-b411-73e468b0a219",
+      "question": "What are the different levels of testing for models in vLLM?"
+    },
+    {
+      "question_id": "aa9843f1-9f99-4a1b-97a0-38b2c344bff2",
+      "question": "What API mode should be selected when adding vLLM as a custom provider in Chatbox?"
+    },
+    {
+      "question_id": "7d46234d-1441-4ffc-83c7-99d6eee98b49",
+      "question": "What are the Python version requirements for vLLM?"
+    },
+    {
+      "question_id": "1055bb0c-b7ad-4cc7-b4c2-78969477ab0e",
+      "question": "What are the default sampling parameter values used in vLLM's offline batched inference quickstart example?"
+    },
+    {
+      "question_id": "ba920c2a-5c39-41bf-a9b7-fd61266a24e6",
+      "question": "What environment variable should be set to use models from ModelScope instead of Hugging Face in vLLM?"
+    },
+    {
+      "question_id": "b5191cd4-9b74-4211-9e60-6272498deae3",
+      "question": "How do you apply chat templates to prompts in vLLM?"
+    },
+    {
+      "question_id": "36cc2ff9-f645-4ea3-83f4-a4b2e6d2ff50",
+      "question": "What is the default address and port for vLLM's OpenAI-compatible server?"
+    },
+    {
+      "question_id": "96e8e480-3e68-4f92-879f-ed8d5bb1e5b3",
+      "question": "What is the default port for vLLM's OpenAI-compatible API server?"
+    },
+    {
+      "question_id": "c8095f4d-8770-4ba0-95c6-845c04c76cc7",
+      "question": "What API endpoint does vLLM support for chat completions?"
+    },
+    {
+      "question_id": "de2be490-c8bd-424a-ab31-ab66a76818aa",
+      "question": "How do you manually set the attention backend in vLLM?"
+    },
+    {
+      "question_id": "07961530-b9c8-4ea3-a521-8eab8bf6f7f4",
+      "question": "What are the cherry-pick criteria for vLLM release branches after branch cut?"
+    },
+    {
+      "question_id": "bd290b8a-9c06-4af2-90b4-3674a9cfb2b4",
+      "question": "What models are currently covered in vLLM's end-to-end performance validation?"
+    },
+    {
+      "question_id": "22a72b90-7e4e-4e12-b01e-255b84dd5bd4",
+      "question": "What Python environment manager is recommended for setting up vLLM?"
+    },
+    {
+      "question_id": "8a05a57d-0086-4a5f-afe2-cdaaa5b5484c",
+      "question": "What interface do generative models implement in vLLM?"
+    },
+    {
+      "question_id": "d90985f8-465d-4b66-8165-3252173ba14b",
+      "question": "How do you enable greedy sampling in vLLM's generate method?"
+    },
+    {
+      "question_id": "4fa0b47e-992b-43c4-84bb-97e0656102f4",
+      "question": "What does the LLM.chat method in vLLM implement?"
+    },
+    {
+      "question_id": "bfd2db0e-020b-4efc-994a-8692df116cd7",
+      "question": "What vLLM server endpoints correspond to the offline LLM.generate and LLM.chat APIs?"
+    },
+    {
+      "question_id": "321d437f-e77f-45bc-abf9-0a7a6fa9b558",
+      "question": "What command do you run to provision a VM instance with vLLM using dstack?"
+    },
+    {
+      "question_id": "b3d63af3-521b-4e66-b57d-d55039a96ea6",
+      "question": "How do you interact with a vLLM model deployed using dstack after provisioning?"
+    },
+    {
+      "question_id": "a4dda932-7199-42ed-b6df-a861f7ee49a2",
+      "question": "What is speculative decoding in vLLM?"
+    },
+    {
+      "question_id": "84b66107-a721-41ee-b0d4-2008be398d00",
+      "question": "How many tokens does vLLM speculate at a time when using speculative decoding with a draft model?"
+    },
+    {
+      "question_id": "000c490a-b271-40c9-b23d-47186815a552",
+      "question": "What method should be used in vLLM's speculative_config to enable n-gram matching for speculative decoding?"
+    },
+    {
+      "question_id": "4f575a44-7098-49ff-81ee-f925c13f956e",
+      "question": "What is the current limitation when using MLP speculators for speculative decoding in vLLM?"
+    },
+    {
+      "question_id": "f2610bab-3056-47f7-829d-6093fe73e5b1",
+      "question": "What speculative decoding accelerator models are available on Hugging Face for vLLM?"
+    },
+    {
+      "question_id": "f925e9b7-3920-4d72-93f2-ce4cb22bd678",
+      "question": "How do you configure vLLM to use EAGLE-based draft models for speculative decoding?"
+    },
+    {
+      "question_id": "43f1a288-9995-450d-8c33-bfe35520e6dd",
+      "question": "What tensor parallelism requirement applies to EAGLE based draft models in vLLM?"
+    },
+    {
+      "question_id": "e0aa0186-4b3e-470a-b7ac-8af483613a22",
+      "question": "What are the three key areas that vLLM's speculative decoding lossless guarantees are broken down into?"
+    },
+    {
+      "question_id": "659fafbd-f472-4167-80ac-3e55bd33a376",
+      "question": "What factors can cause variations in generated outputs when using speculative decoding in vLLM?"
+    },
+    {
+      "question_id": "43914555-ab14-430a-8092-544eba3a30fd",
+      "question": "What resources are available for vLLM contributors working on speculative decoding?"
+    },
+    {
+      "question_id": "4bf223ec-d359-4252-8930-a65db8afcfd1",
+      "question": "What backends does vLLM support for generating structured outputs?"
+    },
+    {
+      "question_id": "7039184d-b417-44c7-bd24-fc6140b90e2a",
+      "question": "What parameters does vLLM support for structured outputs in the OpenAI API?"
+    },
+    {
+      "question_id": "8e7c3a82-62ad-4182-86a7-7c8fda98325b",
+      "question": "How do you generate structured text with a regex pattern in vLLM?"
+    },
+    {
+      "question_id": "9dc7f06a-bff9-403c-91d3-10c07b370096",
+      "question": "Where can I find a complete example of structured outputs in vLLM online serving?"
+    },
+    {
+      "question_id": "997102cf-3715-42c6-87cf-d33ab944fe31",
+      "question": "How do you serve a reasoning model with structured outputs in vLLM?"
+    },
+    {
+      "question_id": "1d6a678d-074a-4fb6-b5c0-48642a946be2",
+      "question": "What OpenAI client method does vLLM support for experimental automatic parsing with structured outputs?"
+    },
+    {
+      "question_id": "648bff80-efa8-4b8e-85f5-389168978b70",
+      "question": "How do you access the parsed structured output from an OpenAI chat completion response in vLLM?"
+    },
+    {
+      "question_id": "3992bb76-e644-4261-8fbd-c36890ac8147",
+      "question": "What type of object does vLLM return when using structured outputs with Pydantic models?"
+    },
+    {
+      "question_id": "9f1c4c71-5b62-4662-8630-6e6c4be78793",
+      "question": "What class is used to configure guided decoding for offline inference in vLLM?"
+    },
+    {
+      "question_id": "b6617e91-56e5-449c-92fa-ed4fd07a2418",
+      "question": "How do you fix vLLM model resolution failures when the config.json lacks the architectures field?"
+    },
+    {
+      "question_id": "c6b5beff-e954-43c6-85bb-3be0ff40eb47",
+      "question": "Should vLLM end-users enable profiling for inference?"
+    },
+    {
+      "question_id": "0840f80b-01c1-4af1-a611-075690a48233",
+      "question": "How do you enable PyTorch profiler tracing in vLLM?"
+    },
+    {
+      "question_id": "f37c6abb-f2ad-488b-a553-39cde99e1709",
+      "question": "What environment variable do you set to specify the directory for vLLM torch profiler output?"
+    },
+    {
+      "question_id": "cd995966-05d9-431a-862d-ce680fddf6c5",
+      "question": "What tool does vLLM recommend for advanced profiling that exposes register and shared memory usage details?"
+    },
+    {
+      "question_id": "4ed023b4-58c6-41dc-8743-0c9493838a2b",
+      "question": "How do you profile a vLLM server using nsys with CUDA graph tracing?"
+    },
+    {
+      "question_id": "554070bd-724d-438b-9b40-4b635d26daef",
+      "question": "How do you manually stop an nsys profiling session in vLLM?"
+    },
+    {
+      "question_id": "a4aa0cc8-ab95-4c66-af21-77bb9774e4b7",
+      "question": "How can you view Nsight Systems profiles in vLLM?"
+    },
+    {
+      "question_id": "8ffb9eb5-b46b-4ea9-ab1d-c4ca287afde7",
+      "question": "What are the two vLLM utility functions for profiling Python code?"
+    },
+    {
+      "question_id": "07f706fd-0dcc-4a56-a5ac-cd94ad1c8185",
+      "question": "How do you achieve reproducible results in vLLM?"
+    },
+    {
+      "question_id": "cfdae01b-7252-4724-88de-f1f3bb50d5cc",
+      "question": "What are the two main ways to build vLLM during development?"
+    },
+    {
+      "question_id": "4382e96d-d2eb-423f-98ef-10528d134580",
+      "question": "What Python version is recommended for vLLM development to avoid CI environment conflicts?"
+    },
+    {
+      "question_id": "f1cafb07-36a6-4b75-a7e4-2c2fb2a78564",
+      "question": "What workflow is recommended when actively developing or modifying kernels in vLLM?"
+    },
+    {
+      "question_id": "2fca0ee8-4ffa-4d5a-a15d-cce139f08f38",
+      "question": "What endpoint does vLLM use to expose production metrics?"
+    },
+    {
+      "question_id": "0226c9c0-9c05-4a48-8098-d9ec3242fa02",
+      "question": "What quantization framework does vLLM support for more efficient and flexible model inference with more precision combinations?"
+    },
+    {
+      "question_id": "4328aa50-5522-4799-99ca-a33fc213b9b2",
+      "question": "How do you disable vLLM V1?"
+    },
+    {
+      "question_id": "15f860cf-b956-43bb-a22a-47eaf5e98ba9",
+      "question": "What are the main goals of vLLM V1's architecture redesign?"
+    },
+    {
+      "question_id": "b4de1cb8-e94e-4670-82ad-89ff894b6a60",
+      "question": "What scheduling policies are supported by vLLM V1's scheduler?"
+    },
+    {
+      "question_id": "7c43f334-9999-42b3-935f-11320dc75270",
+      "question": "What hardware platforms does vLLM support?"
+    },
+    {
+      "question_id": "4e8e2d7f-9f20-402e-b472-7de46ed0f71d",
+      "question": "What is the current status of embedding models in vLLM V1?"
+    },
+    {
+      "question_id": "fb0db743-960e-47f7-81ad-871db98a0c4d",
+      "question": "What special configuration is required for Mamba-1 models in vLLM V1?"
+    },
+    {
+      "question_id": "a96d6061-5ed4-4d8c-9a90-f880864a55a2",
+      "question": "What is the status of FP8 KV Cache feature in vLLM?"
+    },
+    {
+      "question_id": "08705ca3-5f41-41e9-8b79-22f2e2e77c10",
+      "question": "How does vLLM V1's unified scheduler allocate tokens for requests?"
+    },
+    {
+      "question_id": "067b8a3f-caf0-4106-836a-35f2c0793200",
+      "question": "When are logprobs calculated and returned in vLLM V1?"
+    },
+    {
+      "question_id": "31a25606-6807-4598-add3-61bf875aa95b",
+      "question": "What framework can be used to deploy vLLM as a backend server with OpenAI-compatible endpoints?"
+    },
+    {
+      "question_id": "7d9f3137-9991-40c7-be24-ecad99feba52",
+      "question": "What function is called to load plugins in every process created by vLLM?"
+    },
+    {
+      "question_id": "7e228f99-ca58-4b43-bb53-d7e88abbf98a",
+      "question": "What entry point group does vLLM use to register general plugins?"
+    },
+    {
+      "question_id": "98ea95b4-b28b-4cbc-a9d2-06bc3f92b913",
+      "question": "What are the two types of plugins supported by vLLM's plugin system?"
+    },
+    {
+      "question_id": "4c4ebbe5-a8b7-4f68-b6eb-892dec954e70",
+      "question": "What framework can be used to run and scale vLLM to multiple service replicas on clouds and Kubernetes?"
+    },
+    {
+      "question_id": "b6c837a5-92c5-42c5-a786-1acff17011d8",
+      "question": "What port does the vLLM API server use when deploying with SkyPilot?"
+    },
+    {
+      "question_id": "fe020ded-830e-455a-8660-cee98ac681bb",
+      "question": "How do you serve the 70B LLaMA model instead of the default 8B model using SkyPilot?"
+    },
+    {
+      "question_id": "923cc2e7-bf06-40cb-b39b-bb3c0377b28a",
+      "question": "How do you enable autoscaling for a vLLM service deployed with SkyPilot?"
+    },
+    {
+      "question_id": "c7c8d9ac-c3dc-4c2a-85d8-2bf4be6a31a1",
+      "question": "How do you update a vLLM service in SkyPilot with a new configuration?"
+    },
+    {
+      "question_id": "a5cebf8d-e576-4d05-ab93-dad409dc0f08",
+      "question": "What port does the Gradio web UI run on when connecting a GUI to a vLLM endpoint in SkyPilot?"
+    },
+    {
+      "question_id": "3f4ce35c-5c00-4b7f-8781-d292056ba4fb",
+      "question": "Can vLLM serve multiple models on a single port using the OpenAI API?"
+    },
+    {
+      "question_id": "9bee17e5-74ff-4b9d-a24e-36483a86fe40",
+      "question": "Why might the same requests produce different outputs in vLLM?"
+    },
+    {
+      "question_id": "6cfc8477-b6d9-4436-96e8-db9792346b3c",
+      "question": "What are the mitigation strategies for improved stability in vLLM generation?"
+    },
+    {
+      "question_id": "30266ac7-6f42-4e3f-9bce-30219ee46f93",
+      "question": "What is the minimum NVIDIA GPU compute capability required for INT4 computation in vLLM?"
+    },
+    {
+      "question_id": "017f2e39-81b1-4deb-86a7-7057e07d2080",
+      "question": "How many calibration samples are recommended when quantizing weights to INT4 in vLLM?"
+    },
+    {
+      "question_id": "66bcc3cc-043c-4705-9f54-0bd98185e403",
+      "question": "How do you evaluate accuracy of a quantized model using lm_eval in vLLM?"
+    },
+    {
+      "question_id": "b4fb8f6b-b613-46fa-a0aa-aebcf9ed2b14",
+      "question": "What is the recommended starting number of samples for calibration data in INT4 quantization?"
+    },
+    {
+      "question_id": "c1ed2e9d-2034-40d6-a702-d58f97956a87",
+      "question": "What are the two main RAG integrations available with vLLM?"
+    },
+    {
+      "question_id": "6058c372-0c50-43f0-9156-2dadc79433cc",
+      "question": "What are the default ports used for embedding and chat services in vLLM RAG deployment?"
+    },
+    {
+      "question_id": "3992fc72-a6ef-4f3e-88f9-6b9eebdac2b9",
+      "question": "What type of attention kernel does vLLM currently use for its implementation?"
+    },
+    {
+      "question_id": "ddf7d810-e477-427c-b72b-902e8652e434",
+      "question": "What preparations are needed before performing paged attention calculations in vLLM?"
+    },
+    {
+      "question_id": "500191c2-68d5-40bd-add5-cca4fd53ef61",
+      "question": "What does a sequence represent in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "1b089291-8132-4566-8e3f-91c806587b16",
+      "question": "How is query data stored and accessed in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "493b3e85-63f1-4a99-8f5c-7063f6ed9737",
+      "question": "What does the k_ptr pointer reference in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "b1479e4d-9f90-4253-8ea1-09ed7b36774c",
+      "question": "Why are k_vecs stored in register memory instead of other memory types in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "3b852bb1-f795-49f9-91d8-df5212d13a5f",
+      "question": "What happens during the cross thread group reduction in the Qk_dot operation in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "f06707ed-4d83-4b92-87c3-055c7800e02d",
+      "question": "What values need to be obtained to calculate the normalized softmax in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "5e6e97c7-f671-442d-ad81-640e0d9f072a",
+      "question": "What is the purpose of qk_max in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "b4dc1169-e95f-4dac-9bcb-fde26267470e",
+      "question": "What is the purpose of the exp_sum calculation in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "61b3771e-1f90-44ef-9ffd-fdbe3f85d947",
+      "question": "How does value data retrieval differ from query and key in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "16f7f28e-ecff-4feb-9c78-27cf044105c5",
+      "question": "How many inner iterations does a warp need to handle a whole block of value tokens in vLLM's paged attention when BLOCK_SIZE is 16, V_VEC_SIZE is 8, HEAD_SIZE is 128, and WARP_SIZE is 32?"
+    },
+    {
+      "question_id": "92588d4c-e15c-45ab-9034-cdc296d5c49c",
+      "question": "What is the purpose of performing reduction for accs within each warp in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "5c91f452-1b41-48df-b9c9-01c26aaa321e",
+      "question": "How is the output pointer calculated in vLLM's PagedAttention implementation?"
+    },
+    {
+      "question_id": "e48081aa-dc60-4a40-af2d-2c542194610d",
+      "question": "What quantization precisions does GPTQModel support for creating quantized models?"
+    },
+    {
+      "question_id": "f34d7c90-eb96-4173-a996-27fd543c8b31",
+      "question": "What command can be used to run a GPTQModel quantized model with vLLM?"
+    },
+    {
+      "question_id": "65078294-e236-4983-b9be-068e8816d9df",
+      "question": "How do you use GPTQModel quantized models with vLLM's Python API?"
+    },
+    {
+      "question_id": "02c03a84-2aa7-4738-9bd7-aa6aa28989f6",
+      "question": "What command starts the vLLM OpenAI Compatible API server?"
+    },
+    {
+      "question_id": "588ca8ab-cea3-4c22-ba0d-22ff982a835b",
+      "question": "What extra dependencies need to be installed to use vLLM benchmark commands?"
+    },
+    {
+      "question_id": "5bdd9dee-dd60-40b7-8344-c78b5b3770d6",
+      "question": "What command is used to collect environment information in vLLM?"
+    },
+    {
+      "question_id": "86cdf181-2fdf-46fa-a5de-5ab8832a8361",
+      "question": "What CLI command is used for benchmarking latency in vLLM?"
+    },
+    {
+      "question_id": "d41cd2f0-9a89-4d18-b81c-d140924defe1",
+      "question": "What is the CLI command to start vLLM serve?"
+    },
+    {
+      "question_id": "cf7bc39c-b527-4952-a28e-cc861073a482",
+      "question": "What are the two main reasons for using disaggregated prefilling in vLLM?"
+    },
+    {
+      "question_id": "c14a085a-01a6-42e2-8d14-0a1934438da6",
+      "question": "How many types of connectors does vLLM support for disaggregated prefilling?"
+    },
+    {
+      "question_id": "e3f2374c-9598-469e-bdae-a2f0962044e2",
+      "question": "What are the three key abstractions used for disaggregated prefilling in vLLM?"
+    },
+    {
+      "question_id": "868695c5-b071-4df7-8259-dfbc2ee974f3",
+      "question": "What visual resources are available to understand vLLM's disaggregated prefilling architecture?"
+    },
+    {
+      "question_id": "0593b68b-2f74-440e-9d31-f09f06f09bb1",
+      "question": "What are the three recommended ways to implement third-party connectors for vLLM disaggregated prefilling?"
+    },
+    {
+      "question_id": "c56f19a1-387f-4b34-ba67-90429edc19bf",
+      "question": "What are the main API categories documented in vLLM's API documentation?"
+    },
+    {
+      "question_id": "24b36f3b-5bba-45c6-9e3c-c35a30692df0",
+      "question": "What field is used to pass multi-modal inputs alongside text and token prompts in vLLM?"
+    },
+    {
+      "question_id": "c2a6bb52-8f13-4559-a9b8-d3d4151bf1f0",
+      "question": "What data types does vLLM support for CPU inference on x86 platforms?"
+    },
+    {
+      "question_id": "934cc117-e1bb-4699-a965-5404a1a3e07e",
+      "question": "What Docker port mapping is used when launching the vLLM OpenAI server with CPU?"
+    },
+    {
+      "question_id": "62661f5f-ce00-41f5-8803-a2f5371fb950",
+      "question": "How do you verify that vLLM servers are ready when using Docker containers?"
+    },
+    {
+      "question_id": "4a4935a1-3b6f-4775-8355-5838183c6c8b",
+      "question": "What is the primary Python interface for doing offline inference in vLLM?"
+    },
+    {
+      "question_id": "46f15929-61fa-4c39-9200-b23eead92cb8",
+      "question": "What command is used to start the vLLM OpenAI-compatible API server?"
+    },
+    {
+      "question_id": "c382c4b2-9eeb-490d-b29c-b7a518848200",
+      "question": "What are the four main responsibilities of the LLMEngine class in vLLM?"
+    },
+    {
+      "question_id": "f248a57e-d217-49d4-856a-64e23134e9b8",
+      "question": "How many workers are created when using tensor parallelism of size 2 and pipeline parallelism of size 2 in vLLM?"
+    },
+    {
+      "question_id": "452261bc-6ce4-469e-a9b2-fcddbe26b944",
+      "question": "What is the main configuration object that is passed around in vLLM's class hierarchy?"
+    },
+    {
+      "question_id": "dbd231f0-5b9c-4454-806e-f337091ff0a9",
+      "question": "What is the new uniform constructor signature for all vLLM models?"
+    },
+    {
+      "question_id": "54e177d5-9249-4653-b6ea-175de7f7411f",
+      "question": "How does vLLM handle sharding and quantization of model weights during initialization?"
+    },
+    {
+      "question_id": "efb836cc-54e9-436d-b35f-f491c42a50b6",
+      "question": "How does vLLM handle unit testing for individual components that require a complete config object?"
+    },
+    {
+      "question_id": "5390c6b5-0e0b-4672-b754-2ad916b038a7",
+      "question": "What port does Open WebUI run on when deployed with vLLM using Docker?"
+    },
+    {
+      "question_id": "1df79b11-8504-48a1-a896-3a49366bfe7b",
+      "question": "What is the CLI command to run batch processing in vLLM?"
+    },
+    {
+      "question_id": "11e99e8c-04c3-4a82-a1bb-d873c9700fbc",
+      "question": "What prefix do all vLLM environment variables use?"
+    },
+    {
+      "question_id": "318fc5e4-8881-4eb9-ae33-ec2b848fa78b",
+      "question": "How do you register a built-in model in vLLM?"
+    },
+    {
+      "question_id": "d70e288d-7d7e-4a85-bf63-85eea47bcd8a",
+      "question": "What method is used to register a custom model in vLLM's ModelRegistry?"
+    },
+    {
+      "question_id": "957f3943-0d9f-4d97-8076-4bda55baf356",
+      "question": "What memory reduction can FP8 quantization achieve in vLLM?"
+    },
+    {
+      "question_id": "0f4f3196-4080-4e60-8e24-2bcf131bc9e5",
+      "question": "What are the three main steps in the FP8 quantization process in vLLM?"
+    },
+    {
+      "question_id": "0f5d97bf-9666-4550-ac80-1e88084214dc",
+      "question": "What argument should be included when evaluating FP8 quantized models with lm_eval to ensure proper accuracy assessment?"
+    },
+    {
+      "question_id": "366de965-8430-4c81-8832-524daf74fe5e",
+      "question": "How do you enable FP8 dynamic quantization in vLLM?"
+    },
+    {
+      "question_id": "7d8da601-42fe-4df2-a5ba-0348224c4454",
+      "question": "What memory requirement limitation exists when using FP8 quantization in vLLM?"
+    },
+    {
+      "question_id": "bc87728d-8022-4e38-9d66-471de04351e6",
+      "question": "What should you set to ensure vLLM and Ray use the same IP address when nodes have multiple IP addresses?"
+    },
+    {
+      "question_id": "13a01851-a97a-4c5f-93c1-fd8c7a9d6b43",
+      "question": "What precision reduction does AutoAWQ quantization achieve and what are its main benefits?"
+    },
+    {
+      "question_id": "002246e9-f8ec-4985-9041-59c516c5af66",
+      "question": "How do you load an AWQ quantized model using vLLM's LLM entrypoint?"
+    },
+    {
+      "question_id": "cda8e56d-8fce-436c-b393-341b9cdd5ba4",
+      "question": "What command-line argument enables loading model weights with fastsafetensors in vLLM?"
+    },
+    {
+      "question_id": "30694670-c57e-44a2-adaf-d8aae12cfbf8",
+      "question": "What flag do you need to add to use Run:ai Model Streamer when running vLLM as an OpenAI-compatible server?"
+    },
+    {
+      "question_id": "f1fb7289-2496-44e0-b6e8-bd9ff51bba2c",
+      "question": "How can you configure concurrency for the runai_streamer model loader in vLLM?"
+    },
+    {
+      "question_id": "403a2bc6-6ed2-4481-9f2f-d727daa9a781",
+      "question": "What flag should I use to load sharded models with Run:ai Model Streamer in vLLM?"
+    },
+    {
+      "question_id": "a6990fb7-b9b4-4569-b7a7-ca6677dcf5e1",
+      "question": "What is the precedence order for vLLM serve arguments when supplied through multiple methods?"
+    },
+    {
+      "question_id": "87790ff0-09f3-4aa6-8f8e-83180ded4c40",
+      "question": "What is the minimum version of bitsandbytes required for vLLM quantization?"
+    },
+    {
+      "question_id": "86c10da0-ad81-49d4-b015-bdeb5e3309a6",
+      "question": "What additional field do reasoning models return in their outputs that contains the reasoning steps?"
+    },
+    {
+      "question_id": "10f95271-664c-4fc9-b63c-bbb17fe10150",
+      "question": "What flag do you need to specify when serving a reasoning model in vLLM to extract reasoning content?"
+    },
+    {
+      "question_id": "540f21c7-d8ef-4032-b48e-5f4eaa616c42",
+      "question": "How can you check if the reasoning_content attribute is present in OpenAI Python client streaming responses when using vLLM?"
+    },
+    {
+      "question_id": "432f3086-5163-49dc-b386-db4c444fd5ae",
+      "question": "How do you safely extract reasoning_content from streaming chat completion chunks in vLLM?"
+    },
+    {
+      "question_id": "4a7a8f99-4768-40bf-91c5-13b1eb1a4012",
+      "question": "What field does tool calling parse functions from when reasoning parser is enabled in vLLM?"
+    },
+    {
+      "question_id": "070dd694-1d93-473d-8d04-3ac50689b023",
+      "question": "How do you add support for a new reasoning model in vLLM?"
+    },
+    {
+      "question_id": "9a5bf6ed-24d4-4ef3-9a40-d4d4c828a1b7",
+      "question": "What flag is used to enable reasoning for a model in vLLM?"
+    },
+    {
+      "question_id": "2d8e04da-8f89-4654-bc2d-118a3aa3512e",
+      "question": "What is the primary motivation behind the Modular Kernel framework in vLLM's FusedMoE implementation?"
+    },
+    {
+      "question_id": "b2c4a723-5b48-4684-95c6-f495b77e7348",
+      "question": "How many components does FusedMoEModularKernel split the FusedMoE operation into?"
+    },
+    {
+      "question_id": "b6dae58e-f7db-4b14-951e-6e6f739c551e",
+      "question": "What are the responsibilities of the prepare and finalize functions in FusedMoEPrepareAndFinalize?"
+    },
+    {
+      "question_id": "7aad787b-e842-462f-b403-6e988fafd785",
+      "question": "What are the three important functions exposed by the FusedMoEPermuteExpertsUnpermute abstract class in vLLM?"
+    },
+    {
+      "question_id": "dca76d8e-842b-498d-9bfa-ea145ab67e6d",
+      "question": "What are the two main components that make up the FusedMoEModularKernel in vLLM?"
+    },
+    {
+      "question_id": "c05d5f13-c89d-47d5-ab76-bcddedf26c30",
+      "question": "What is the purpose of the All2All Manager in vLLM's FusedMoE implementation?"
+    },
+    {
+      "question_id": "1e4bca1b-610b-469c-9eac-5786b5c5c886",
+      "question": "What does the FusedMoEPermuteExpertsUnpermute::supports_chunking() method return and when is chunking typically supported?"
+    },
+    {
+      "question_id": "fecad93e-3f93-4647-9b9e-4225b072ae3f",
+      "question": "What are the three methods in FusedMoEMethodBase class responsible for creating the FusedMoEModularKernel object?"
+    },
+    {
+      "question_id": "b9d4e787-9376-4771-b5b2-c1783ae69cfa",
+      "question": "What does the init_prepare_finalize method do in vLLM's fused MoE implementation?"
+    },
+    {
+      "question_id": "a1668cc3-0232-421c-a00d-7d8672c5981a",
+      "question": "How do you add a new FusedMoEPrepareAndFinalize implementation to the vLLM unit test suite?"
+    },
+    {
+      "question_id": "aff71ac0-6e55-4f62-8058-587a139207c4",
+      "question": "How do you profile the FusedMoEModularKernel in vLLM?"
+    },
+    {
+      "question_id": "626fea67-be37-41c7-b801-ff643ca89b8c",
+      "question": "What FusedMoEPrepareAndFinalize implementation is used when there is no expert parallelism in vLLM?"
+    },
+    {
+      "question_id": "ddf3e87c-91fc-4918-a357-1098fddb4624",
+      "question": "What FusedMoEPermuteExpertsUnpermute implementation supports both batched and contiguous formats for fp8 matmuls?"
+    },
+    {
+      "question_id": "20d782a2-4a82-46c3-bb46-ad7f2a6f2eba",
+      "question": "What is the vLLM production stack and what are its key features?"
+    },
+    {
+      "question_id": "809ea866-0c48-4cb6-a525-d596c0ddebc3",
+      "question": "What command is used to monitor the deployment status of vLLM production stack?"
+    },
+    {
+      "question_id": "63ae082a-588a-4675-89be-9f6af613dc89",
+      "question": "What port should you forward for the vllm-router-service to send queries to the vLLM deployment?"
+    },
+    {
+      "question_id": "2d5743ca-4986-4dca-8ea3-7cfc8fc73f60",
+      "question": "How do you uninstall a vLLM deployment using Helm?"
+    },
+    {
+      "question_id": "df20f5bd-5f82-401c-a25e-2bfc808c5fdd",
+      "question": "What is the minimum recommended GCC/G++ compiler version for building vLLM on CPU?"
+    },
+    {
+      "question_id": "1b6033b0-2be2-4250-9dd1-aa248214cbf7",
+      "question": "What is KubeRay and how does it help with running vLLM workloads?"
+    },
+    {
+      "question_id": "c62245a6-22e3-42dc-9a7d-d4b3cc99fcf5",
+      "question": "What command is used to start a vLLM server with a chat completion model for Streamlit integration?"
+    },
+    {
+      "question_id": "4dd7726b-38fe-419b-9c9f-98b8d7256db1",
+      "question": "How do you install AMD Quark for quantization in vLLM?"
+    },
+    {
+      "question_id": "b48384fd-e110-4f8f-8a5d-5782ffce543a",
+      "question": "What quantization algorithm is used for FP8 per-tensor quantization in vLLM's Quark integration?"
+    },
+    {
+      "question_id": "0ae5aeea-7921-49c0-8a75-fe7e61f1a20d",
+      "question": "What layers are excluded when configuring Quark quantization for LLAMA models?"
+    },
+    {
+      "question_id": "34d5ae06-1ff6-4ae4-9887-8fbfbc116ea4",
+      "question": "What format does Quark require for exporting quantized models in vLLM?"
+    },
+    {
+      "question_id": "90939e22-7490-40f0-9cad-3cd8173a6c95",
+      "question": "What quantization parameter should be specified when loading a Quark quantized model in vLLM?"
+    },
+    {
+      "question_id": "e10f036b-4439-49d5-9b3a-a69e28df5b41",
+      "question": "What command is used to serve an MXFP4 model in vLLM?"
+    },
+    {
+      "question_id": "28feffb9-c8b4-42b8-8574-293cdc257729",
+      "question": "How do you install the latest TorchAO nightly build for CUDA 12.6?"
+    },
+    {
+      "question_id": "6fb26de3-3c55-4686-8e2b-c260fc8ec68c",
+      "question": "What hardware platform does vLLM support for running models besides GPUs?"
+    },
+    {
+      "question_id": "a7cdfc2f-2e0f-4a06-a372-c679caa106dd",
+      "question": "What type of language models are supported on TPU hardware in vLLM?"
+    },
+    {
+      "question_id": "035fc75a-6b2f-4ccb-b6ac-5c45e19599ce",
+      "question": "What is the TPU support status for the mistralai/Mixtral-8x7B-Instruct-v0.1 model in vLLM?"
+    },
+    {
+      "question_id": "3de07b32-b5a6-4ed6-8515-84bffc4b40a1",
+      "question": "What do the different symbols mean in vLLM's TPU model compatibility documentation?"
+    },
+    {
+      "question_id": "0d83318c-eba4-4060-8284-f2e1130b5736",
+      "question": "What flag needs to be set when instantiating a vLLM model to enable LoRA adapter support?"
+    },
+    {
+      "question_id": "db5d9efc-223a-4732-a491-89acb298da34",
+      "question": "How do you specify a LoRA adapter when generating text with vLLM?"
+    },
+    {
+      "question_id": "45b3ff0f-8a40-4a47-839c-3e08adec7e1f",
+      "question": "How do you specify LoRA modules when starting a vLLM server?"
+    },
+    {
+      "question_id": "309d5467-2cba-45aa-aac5-41f71794d0c9",
+      "question": "What is the curl command to make a completion request to a LoRA model in vLLM?"
+    },
+    {
+      "question_id": "a815cc3c-ede9-4897-86fd-5ed54988611f",
+      "question": "What environment variable needs to be set to enable dynamic LoRA configuration in vLLM?"
+    },
+    {
+      "question_id": "17526382-7764-4120-b5e8-2d3726b8a4da",
+      "question": "What HTTP endpoint is used to dynamically load a LoRA adapter in vLLM?"
+    },
+    {
+      "question_id": "edf75a4e-ba7b-42e5-87d8-0f9f119ad1b7",
+      "question": "How can you enable dynamic loading of LoRA adapters in vLLM using plugins?"
+    },
+    {
+      "question_id": "aa07945e-50de-4b5b-91a8-16ee29144883",
+      "question": "How do you register a LoRA resolver plugin in vLLM?"
+    },
+    {
+      "question_id": "ade7f07d-4b53-45dc-a2f0-09ec4dac7f4a",
+      "question": "What is the new JSON format for specifying LoRA modules in vLLM with base model name?"
+    },
+    {
+      "question_id": "6988d1f8-e1e8-4313-8d50-cc6352842f5f",
+      "question": "What does the parent field in a LoRA model's model card represent in vLLM?"
+    },
+    {
+      "question_id": "d095b765-25e2-4e25-8aa4-565d93e07143",
+      "question": "What happens when multiple modalities are provided and each is registered to a default LoRA in vLLM multimodal models?"
+    },
+    {
+      "question_id": "5c579258-59df-4bc6-af98-2a13f57d7b70",
+      "question": "How do you configure default multimodal LoRAs when starting the vLLM server?"
+    },
+    {
+      "question_id": "05f46d68-b95b-4cb7-a0d4-9ab3966fd699",
+      "question": "What should the max_lora_rank parameter be set to when using LoRA adapters in vLLM?"
+    },
+    {
+      "question_id": "236d8cbf-f0e2-451a-a431-7b026e6490e9",
+      "question": "What happens when you set the max-lora-rank parameter unnecessarily high in vLLM?"
+    },
+    {
+      "question_id": "5e2555d2-a1a6-4402-ac72-4e7f46378439",
+      "question": "What are the three main usage patterns supported by vLLM?"
+    },
+    {
+      "question_id": "48d5ef97-a3d6-496c-9467-b16fa9d8b182",
+      "question": "What tool_choice options does vLLM support for tool calling in the chat completion API?"
+    },
+    {
+      "question_id": "19a12584-e3e9-422d-8393-756990d7c27c",
+      "question": "What command line parameters are needed to enable tool calling with Meta's Llama 3.1 8B model in vLLM?"
+    },
+    {
+      "question_id": "a539535c-f883-4411-b27e-95b99b1dafc4",
+      "question": "What is the caller's responsibility when using vLLM tool calling?"
+    },
+    {
+      "question_id": "226b353c-f440-4a54-8fd9-8019566212c9",
+      "question": "What does vLLM use for named function calling in the chat completion API?"
+    },
+    {
+      "question_id": "d8973cc8-ec5a-4e68-9017-57f5f9b4f261",
+      "question": "What happens when tool_choice='none' is set in vLLM's chat completion API?"
+    },
+    {
+      "question_id": "0489281a-086d-4851-92ba-c593525fbe36",
+      "question": "What flag is mandatory to enable automatic function calling in vLLM?"
+    },
+    {
+      "question_id": "71075ec7-35f4-4718-aee0-1512d5c64921",
+      "question": "What are the recommended flags for using Mistral models with tool calling in vLLM?"
+    },
+    {
+      "question_id": "9423895e-b4b2-4844-ba61-c818f2c48f27",
+      "question": "What tool calling format does vLLM support for Llama 3.1 and 3.2 models?"
+    },
+    {
+      "question_id": "b7146344-d0ee-4f55-b79a-24e4372f4296",
+      "question": "What tool call parser should be used with the ibm-granite/granite-3.1-8b-instruct model in vLLM?"
+    },
+    {
+      "question_id": "f2ef0792-5f78-4317-8788-460a3bf12c4f",
+      "question": "Which InternLM models are supported for tool calling in vLLM?"
+    },
+    {
+      "question_id": "0aa35585-7ab5-47f2-8009-a67e2392c094",
+      "question": "What tool call parser should be used for Qwen2.5 models in vLLM?"
+    },
+    {
+      "question_id": "2221846e-8a32-47e8-a26e-1aab036549b4",
+      "question": "What format do models with pythonic tool calls use to represent tool calls in vLLM?"
+    },
+    {
+      "question_id": "031513a4-78c1-4a1c-8a5c-2cd2084fe549",
+      "question": "How do you register a custom tool parser in vLLM?"
+    },
+    {
+      "question_id": "1571587d-1249-4f04-86f4-0380c9500af6",
+      "question": "How do you enable a custom tool parser plugin in vLLM command line?"
+    },
+    {
+      "question_id": "37c64d82-3867-4c52-9f8c-5cc2b4d100cb",
+      "question": "Which quantization implementations in vLLM support AMD GPUs?"
+    },
+    {
+      "question_id": "df31213d-de89-4eb2-8906-97b3c1bb54fe",
+      "question": "What does SM 8.0/8.6 correspond to in terms of GPU architecture in vLLM's quantization hardware compatibility?"
+    },
+    {
+      "question_id": "8cf97727-678a-4b31-8b2b-5412b2925ecb",
+      "question": "What is vLLM and what was it originally developed for?"
+    },
+    {
+      "question_id": "975c1563-6b58-4f1b-8789-d39326b4a5f0",
+      "question": "What memory management technique does vLLM use for attention key and value memory?"
+    },
+    {
+      "question_id": "5fa734d5-a993-4ec8-89b6-3c580955e599",
+      "question": "What is the CLI command to benchmark vLLM serve performance?"
+    },
+    {
+      "question_id": "32300318-21dd-4ee2-a4f2-f128c07ca170",
+      "question": "What is the P2P NCCL Connector in vLLM?"
+    },
+    {
+      "question_id": "cca23ea4-77f4-4523-a618-8e3d1074adb0",
+      "question": "What are the three KV cache transfer methods in vLLM and how do they rank in performance?"
+    },
+    {
+      "question_id": "62f44a79-ab01-419c-ae49-e524d909f747",
+      "question": "What is the world size of the NCCL group used for P2P KV cache transfer in vLLM?"
+    },
+    {
+      "question_id": "267979d3-2fc0-4a1f-b109-2a65feb0adbb",
+      "question": "How much GPU memory does an NCCL group typically occupy when NCCL_MAX_NCHANNELS is set to 16?"
+    },
+    {
+      "question_id": "7a78a774-f679-4e36-9d0b-bf4bd928e906",
+      "question": "What parameter configures the size of the GPU memory buffer in vLLM's P2P NCCL connector?"
+    },
+    {
+      "question_id": "221870a6-96ac-4be0-b93a-69dd732e6c83",
+      "question": "What is the typical read and write speed of PCIe 4.0 for KVCache storage in vLLM's Tensor memory pool?"
+    },
+    {
+      "question_id": "d8a776b1-adb4-428b-8e81-306998a43554",
+      "question": "What is the minimum vLLM version required for P2P NCCL connector functionality?"
+    },
+    {
+      "question_id": "53baaefb-baf7-471c-8499-1edf7631152f",
+      "question": "What port does the proxy use in vLLM's 1P3D disaggregated serving setup with P2P NCCL connector?"
+    },
+    {
+      "question_id": "6598dc1b-107a-4c7f-b207-8c88701b6808",
+      "question": "What GPU memory utilization setting is used for vLLM P2P NCCL connector decode instances?"
+    },
+    {
+      "question_id": "cb3659eb-265e-41a1-8114-19082925ba96",
+      "question": "What port should be used for the proxy in vLLM's 3P1D disaggregated serving setup with P2P NCCL connector?"
+    },
+    {
+      "question_id": "1682318c-a583-467f-8bc0-6a1231f85ca7",
+      "question": "What is the difference in gpu-memory-utilization between Prefill3 and Decode1 instances in vLLM P2P NCCL connector setup?"
+    },
+    {
+      "question_id": "3f8ed5b3-f723-4eaa-b8b4-afa702162aeb",
+      "question": "What are the alternative deployment options for vLLM on Kubernetes besides native Kubernetes deployment?"
+    },
+    {
+      "question_id": "e6c5dbbd-f7f3-4d53-a378-941094ea2b16",
+      "question": "What port does the vLLM server run on when deployed in Kubernetes?"
+    },
+    {
+      "question_id": "c4c717dc-c8e3-496b-8ee5-da1cc19e32f9",
+      "question": "What is the pre-requisite for deploying vLLM with GPUs on Kubernetes?"
+    },
+    {
+      "question_id": "d2a1591a-90db-475b-9572-b388a86efd37",
+      "question": "What is the shared memory size limit configured for vLLM tensor parallel inference in Kubernetes deployments?"
+    },
+    {
+      "question_id": "f9c9eb48-3431-4953-a754-a7a9a34b8b8d",
+      "question": "What GPU type can be used with vLLM deployment on Kubernetes for AMD hardware?"
+    },
+    {
+      "question_id": "66e847fa-4409-41e0-ad8a-e992d9c8e766",
+      "question": "What shared memory size limit is configured for vLLM tensor parallel inference in Kubernetes deployments?"
+    },
+    {
+      "question_id": "02ae3964-e459-4db9-918e-981cc7deb1ae",
+      "question": "What command is used to apply Kubernetes deployment and service configurations for vLLM?"
+    },
+    {
+      "question_id": "04e3ddb6-9ede-44ae-b217-2c3406582bc0",
+      "question": "What should you do if vLLM startup or readiness probes fail with \"KeyboardInterrupt: terminated\" in Kubernetes?"
+    },
+    {
+      "question_id": "c90eeb5b-f095-4171-895c-0a92b48961fd",
+      "question": "What vLLM parameters should be set when using 2 nodes with 8 GPUs per node for distributed inference?"
+    },
+    {
+      "question_id": "9d4beb45-3d89-4dfe-9232-187e88eb6b66",
+      "question": "What should you set tensor_parallel_size and pipeline_parallel_size to when the GPU count doesn't evenly divide the model size in vLLM?"
+    },
+    {
+      "question_id": "5fcddb53-d6d0-4ef2-a4bf-b69790561af2",
+      "question": "What parallelism strategy does vLLM support for large-scale deployment of Mixture of Experts models?"
+    },
+    {
+      "question_id": "c125b45b-d6a8-4331-95c6-0cad00d1b40c",
+      "question": "What parameter should be set in the vLLM LLM class to run inference on multiple GPUs?"
+    },
+    {
+      "question_id": "3e2361ad-f344-4af0-8c34-5931980300e5",
+      "question": "How do you configure vLLM to use 8 GPUs with tensor parallelism and pipeline parallelism?"
+    },
+    {
+      "question_id": "e40e7faa-4d69-41d9-a697-0147d9609e9e",
+      "question": "What distributed computing framework is required for multi-node vLLM deployments?"
+    },
+    {
+      "question_id": "76d29bcd-dc5d-40ec-9ccb-6b00c1e6ade7",
+      "question": "What Docker flag should be added to enable GPU performance counters access when profiling or tracing in vLLM Ray cluster setup?"
+    },
+    {
+      "question_id": "becefabd-1c2a-4257-b14c-78733bb1407f",
+      "question": "What is the recommended tensor parallel size and pipeline parallel size configuration when running vLLM on a Ray cluster with 16 GPUs across 2 nodes?"
+    },
+    {
+      "question_id": "9e354233-a9c0-48c9-9af9-75c3f67ac54f",
+      "question": "What network adapter type is recommended for efficient tensor parallelism in vLLM?"
+    },
+    {
+      "question_id": "74de08d1-3bf7-43de-a74c-1eac844bc063",
+      "question": "How do you enable GPUDirect RDMA in vLLM using Docker?"
+    },
+    {
+      "question_id": "b8006621-c08c-4ada-a80b-586fc3e5b4e9",
+      "question": "Where can I find information about debugging distributed vLLM deployments?"
+    },
+    {
+      "question_id": "08e4cf24-d237-4a69-9f7d-1e0cefc0792d",
+      "question": "What are the hardware requirements for running vLLM on Intel GPU platform?"
+    },
+    {
+      "question_id": "2ade35d2-7ca5-432a-8ff7-5abce72af59b",
+      "question": "What distributed runtime backend is required for XPU platform tensor parallel and pipeline parallel inference in vLLM?"
+    },
+    {
+      "question_id": "d5487282-3b5c-4398-b314-33f7a18515af",
+      "question": "What type of deployment does vLLM support where model weights are replicated across separate instances or GPUs?"
+    },
+    {
+      "question_id": "4a976164-c246-4940-bc60-b1e2ed2d1135",
+      "question": "What are the two distinct modes supported for online deployments in vLLM data parallel deployment?"
+    },
+    {
+      "question_id": "5a5189ea-56a8-40ea-a338-94322a242135",
+      "question": "How do you configure data parallel deployment in vLLM?"
+    },
+    {
+      "question_id": "8cd91e0b-0a48-43e1-9c53-53000ff5cfa5",
+      "question": "What command line option can be used to scale out API server processes when deploying large data parallel sizes in vLLM?"
+    },
+    {
+      "question_id": "fd32645e-c2f9-42c9-907d-b2427be0afa2",
+      "question": "How can you handle load balancing for vLLM data parallel deployments at larger scale?"
+    },
+    {
+      "question_id": "acf4e509-eb54-439e-8497-5c2f7609ee7e",
+      "question": "What additional parameters are required for multi-node data parallel deployment in vLLM?"
+    },
+    {
+      "question_id": "6c54a6e3-b6ac-4902-ae66-1729cb78629f",
+      "question": "What hardware platforms does vLLM support?"
+    },
+    {
+      "question_id": "9e6862af-cfac-445b-870a-009255966178",
+      "question": "What is the endpoint URL format for making requests to a vLLM deployment on Cerebrium?"
+    },
+    {
+      "question_id": "b8a46091-2a26-469e-82a7-a226be9cfce4",
+      "question": "What GPU compute capability is required for INT8 computation in vLLM?"
+    },
+    {
+      "question_id": "ad693c35-fc67-4b8a-a276-58287e3e604b",
+      "question": "How many calibration samples are recommended when quantizing activations to INT8 in vLLM?"
+    },
+    {
+      "question_id": "cc83c230-099f-4c11-aeab-8c09715c5942",
+      "question": "What command can be used to evaluate the accuracy of a quantized model using lm_eval with vLLM?"
+    },
+    {
+      "question_id": "7bc073ab-c317-441e-a0d6-0998fb19f86c",
+      "question": "How many samples should you start with for calibration data in vLLM INT8 quantization?"
+    },
+    {
+      "question_id": "1bd8b10e-7562-4140-b067-682d9ee151f0",
+      "question": "What operating system versions are required to run vLLM on Apple silicon Macs?"
+    },
+    {
+      "question_id": "2a297df9-dacc-442c-899b-6416078fb451",
+      "question": "What are the system requirements for running vLLM with Intel Gaudi devices?"
+    },
+    {
+      "question_id": "f71aa453-7691-4a2a-ab94-986360e3e22b",
+      "question": "What command verifies that Intel Gaudi accelerators are visible and accessible?"
+    },
+    {
+      "question_id": "914e65a0-ec84-4c51-9d80-e49047493d87",
+      "question": "How do you build vLLM from source for Intel Gaudi?"
+    },
+    {
+      "question_id": "8447d11b-fb89-4c9c-a8d9-6251ab28c7f6",
+      "question": "What quantization methods are supported and unsupported for vLLM on Intel Gaudi?"
+    },
+    {
+      "question_id": "1a7ba034-ef08-4c22-af36-8b0524a9355f",
+      "question": "What features are not supported when using vLLM with Intel Gaudi devices?"
+    },
+    {
+      "question_id": "558fa55a-99bd-4927-95b9-ac4eef8f4e5a",
+      "question": "How many execution modes does vLLM support for HPU and what are they?"
+    },
+    {
+      "question_id": "fc24d926-7937-431e-8919-7223cbee82ec",
+      "question": "What mechanism does vLLM use to minimize graph compilations when serving models on Intel Gaudi accelerators?"
+    },
+    {
+      "question_id": "3aee5efb-1015-4934-8e97-bc79b82d1665",
+      "question": "What happens when a request exceeds the maximum bucket size in vLLM on Intel Gaudi?"
+    },
+    {
+      "question_id": "0ec6e6ce-ab30-4516-9998-9c2609c86281",
+      "question": "What is the purpose of the warmup step in vLLM for Intel Gaudi?"
+    },
+    {
+      "question_id": "55a0469c-f98e-4696-836b-4a3e25b20086",
+      "question": "How can you disable bucket compilation warmup in vLLM for Intel Gaudi?"
+    },
+    {
+      "question_id": "d14ce7f6-b92d-4a94-a25e-f76bdf804c95",
+      "question": "What is the default value of VLLM_GRAPH_RESERVED_MEM for HPU Graphs on Intel Gaudi?"
+    },
+    {
+      "question_id": "fde667f2-a85d-4938-97f6-b7d1945f06bc",
+      "question": "What are the two HPU graph capture strategies available for Intel Gaudi in vLLM?"
+    },
+    {
+      "question_id": "7077bc3f-219b-42a0-ba5a-ea8c948bce00",
+      "question": "How many prompt buckets are generated by vLLM on Intel Gaudi HPU?"
+    },
+    {
+      "question_id": "5b8160d7-1d6d-478d-b3a9-d20e55375409",
+      "question": "What is the default ratio for prompt memory allocation in vLLM's HPU implementation?"
+    },
+    {
+      "question_id": "6029702c-7b84-4208-b694-664fc027b317",
+      "question": "How long does warmup take for vLLM on Intel Gaudi?"
+    },
+    {
+      "question_id": "dabae861-596a-422a-8b02-ba8d7814d882",
+      "question": "What block size is recommended for running vLLM inference on Intel Gaudi 2 with BF16 data type?"
+    },
+    {
+      "question_id": "7341e662-5a63-494b-8e26-9fa3c4b402dd",
+      "question": "What is the default value for VLLM_GRAPH_RESERVED_MEM in vLLM Intel Gaudi installation?"
+    },
+    {
+      "question_id": "e567e628-ab99-4569-970a-93b9ec4df706",
+      "question": "What is the default value for VLLM_PROMPT_BS_BUCKET_MAX in Intel Gaudi configuration?"
+    },
+    {
+      "question_id": "80f9ae90-eed9-4f9e-bed5-0c674f7f18ef",
+      "question": "What is the default value of gpu_memory_utilization for Intel Gaudi HPU in vLLM?"
+    },
+    {
+      "question_id": "26a726a8-e47e-4933-9563-8b888a485464",
+      "question": "Which TPU versions are supported by vLLM for Google Cloud TPU?"
+    },
+    {
+      "question_id": "b3fd5e00-69d9-4b59-ae2e-01c6ff53041a",
+      "question": "What TPU versions are supported for vLLM installation on Google Cloud TPU VM?"
+    },
+    {
+      "question_id": "b04b8425-be3a-438d-b71a-e3f986559dcb",
+      "question": "What does the ACCELERATOR_TYPE parameter specify when setting up Google Cloud TPU for vLLM?"
+    },
+    {
+      "question_id": "e2eb6884-69f4-4443-8571-0bb2e7443caf",
+      "question": "Are there pre-built TPU wheels available for vLLM?"
+    },
+    {
+      "question_id": "485d2f02-e670-48f2-8673-2ac05c407d08",
+      "question": "How long does XLA graph compilation take for vLLM on TPU during the first run?"
+    },
+    {
+      "question_id": "c296220e-1be2-40f5-a24d-36b14ad89fd7",
+      "question": "What is PagedAttention in vLLM?"
+    },
+    {
+      "question_id": "499e6860-db6b-4558-a07a-17a67a0aee9c",
+      "question": "How do you install vLLM using pip?"
+    },
+    {
+      "question_id": "57ee665c-20b4-45c4-94e3-375cc25b5e65",
+      "question": "What command can I use to preview the usage data that vLLM collects?"
+    },
+    {
+      "question_id": "810daaac-66bc-4d2b-9e36-94339b61e493",
+      "question": "How can I opt out of vLLM usage statistics collection?"
+    },
+    {
+      "question_id": "b61f717b-0215-4220-a174-8c4df6282471",
+      "question": "How can I disable usage stats collection in vLLM?"
+    },
+    {
+      "question_id": "19950e1d-0248-438d-b940-be6ed254bd85",
+      "question": "What are the two common 8-bit floating point data formats specified by OCP for FP8 KV cache quantization?"
+    },
+    {
+      "question_id": "58f915a4-7e75-4e3c-ae70-8ffad6690de0",
+      "question": "What parameter should be set to True when enabling FP8 quantization to calculate kv cache scales on the fly in vLLM?"
+    },
+    {
+      "question_id": "9d0609d1-f972-49de-8dfc-d27c501ec137",
+      "question": "What tool is recommended for generating calibrated scales for FP8 KV Cache in vLLM?"
+    },
+    {
+      "question_id": "53aab081-8574-4ca8-be14-ddef83264047",
+      "question": "How many calibration samples are recommended as a starting point for quantized KV cache in vLLM?"
+    },
+    {
+      "question_id": "d80c7cd8-a9a6-42e2-86be-5e198ca6781c",
+      "question": "What parameter must be specified when running a model with quantized KV cache in vLLM?"
+    },
+    {
+      "question_id": "589f868e-c1ba-4286-abda-ad99c4553ec4",
+      "question": "What is the vLLM CLI command for benchmarking throughput?"
+    },
+    {
+      "question_id": "f6f62a5b-2016-4f2b-a2eb-e89ea947cb46",
+      "question": "What tools are recommended for fast rebuilds when working with vLLM's incremental compilation workflow?"
+    },
+    {
+      "question_id": "24934a2e-1ba4-465b-8058-d7d37d38df01",
+      "question": "What script can you use to generate CMakeUserPresets.json for vLLM's incremental build setup?"
+    },
+    {
+      "question_id": "b74aa9f9-3228-4864-9e3c-7a93124337d3",
+      "question": "What should you do if you encounter persistent build errors in vLLM after switching branches?"
+    },
+    {
+      "question_id": "ee61d1f9-8a90-43d7-afc0-b58391cdf4fa",
+      "question": "What are the three main levels of configuration in vLLM ordered by priority?"
+    },
+    {
+      "question_id": "02c707fd-641f-4ad0-8591-1c1f12739fa0",
+      "question": "What cloud platform can vLLM be deployed on for serverless GPU computing?"
+    },
+    {
+      "question_id": "4e1f224b-8264-4930-afcd-92d3b38d8075",
+      "question": "How do you install Llama Stack to use with vLLM?"
+    },
+    {
+      "question_id": "d0853e7c-86df-4b77-85d6-206d49f713a5",
+      "question": "How should security issues be reported in vLLM?"
+    },
+    {
+      "question_id": "1e256d6b-476d-4ce1-bc54-497a1ba66e4a",
+      "question": "What CVSS score range defines HIGH severity vulnerabilities in vLLM's security classification system?"
+    },
+    {
+      "question_id": "34f98955-23b5-4e2f-a6af-38c968ecc6b7",
+      "question": "What platform can vLLM be deployed with on Kubernetes for scalable distributed model serving?"
+    },
+    {
+      "question_id": "747376cb-efc7-4bd0-94ab-f67345f2029e",
+      "question": "What environment variable should be set to skip the warmup stage when testing FP8 models in vLLM?"
+    },
+    {
+      "question_id": "20710f37-f501-4e69-af62-a7ea037f457a",
+      "question": "Where are unquantized weights first loaded before being quantized and transferred to HPU in vLLM's INC quantization?"
+    },
+    {
+      "question_id": "773924b4-c152-4fb5-bbf9-c47a5f288cf3",
+      "question": "What Python versions does vLLM support?"
+    },
+    {
+      "question_id": "70542917-561a-4dea-9a48-ca8cc39c6572",
+      "question": "What are the two main ways to set up vLLM for GPU usage?"
+    },
+    {
+      "question_id": "276beb5b-2971-4bb8-be90-5a77b61b2a56",
+      "question": "What GPU platforms does vLLM support for installation?"
+    },
+    {
+      "question_id": "bd8abdd2-52de-4602-94f6-913cb3b6594b",
+      "question": "What approach does vLLM use to implement prefix caching?"
+    },
+    {
+      "question_id": "b1330c54-43d9-4c81-8006-620c8da63036",
+      "question": "What hash function is recommended for vLLM prefix caching in multi-tenant setups to avoid collisions?"
+    },
+    {
+      "question_id": "1eb1196c-bc38-4930-bd9a-c8c9d13ff379",
+      "question": "How does vLLM implement cache isolation for security in prefix caching?"
+    },
+    {
+      "question_id": "890f10b4-907b-4f85-8bf8-28e0375e1af4",
+      "question": "What are the two main design benefits of introducing doubly linked list pointers directly in the KVCacheBlock for vLLM's prefix caching?"
+    },
+    {
+      "question_id": "8a2506c8-7e08-4320-a818-e4808ff20b57",
+      "question": "What happens when vLLM's KV cache manager allocates a block that is already full of tokens?"
+    },
+    {
+      "question_id": "eeab22ac-7928-43fa-b0d9-1ba2a60f290e",
+      "question": "What happens to duplicated blocks in vLLM v1's prefix caching when the same content is cached multiple times?"
+    },
+    {
+      "question_id": "662d963b-5c0b-4ac8-a0cf-a1c50b33848e",
+      "question": "What happens to freed blocks when they are added to the free queue in vLLM's prefix caching system?"
+    },
+    {
+      "question_id": "ffe16deb-19cc-48ff-9d04-e1e88b35ced8",
+      "question": "What happens to cached blocks when they are hit during prefix caching allocation in vLLM?"
+    },
+    {
+      "question_id": "0a7bea02-51e0-4eae-909b-648315b80705",
+      "question": "What is the minimum hardware requirement for deploying vLLM with LWS on Kubernetes?"
+    },
+    {
+      "question_id": "8e2dd462-12c4-4efa-acd1-65b4ea5e6441",
+      "question": "What file should be deployed when using LeaderWorkerSet (LWS) framework with vLLM?"
+    },
+    {
+      "question_id": "409d7661-37de-4c82-b1c1-083944539260",
+      "question": "What is the default shared memory size limit for vLLM containers in LeaderWorkerSet deployment?"
+    },
+    {
+      "question_id": "23989a3b-51b4-4251-9f26-97a6d8322aee",
+      "question": "How can you verify that distributed tensor-parallel inference is working in a vLLM LeaderWorkerSet deployment?"
+    },
+    {
+      "question_id": "565233bc-a696-44b8-baf7-1fe04b18b6b5",
+      "question": "What port should you use to access vLLM when using kubectl port-forward with the vllm-leader service?"
+    },
+    {
+      "question_id": "615c2ca0-6dd8-453f-b902-a6eee4dd85b3",
+      "question": "What interface do pooling models implement in vLLM?"
+    },
+    {
+      "question_id": "d25db85a-b411-43f7-9d01-1ac823c05a3a",
+      "question": "What command line option is used to run a model in pooling mode in vLLM?"
+    },
+    {
+      "question_id": "4f8f947a-20d1-4374-8307-edcd16e7bfd6",
+      "question": "What are the default pooling configurations for reward, embed, and classify tasks in converted vLLM models?"
+    },
+    {
+      "question_id": "5ea5c01a-c953-4477-ae3a-978e20bd73b8",
+      "question": "What method does vLLM's LLM class provide for generating embedding vectors from prompts?"
+    },
+    {
+      "question_id": "c9a275c7-1da0-4cbb-8457-e50fd0fd2ebf",
+      "question": "What method is available to all pooling models in vLLM for extracting hidden states directly?"
+    },
+    {
+      "question_id": "c53b8adc-7516-48e7-b078-916579ef3b0c",
+      "question": "What APIs does vLLM's OpenAI-Compatible Server provide for pooling models?"
+    },
+    {
+      "question_id": "03c7ceae-91f2-42ed-a47e-c56fd693ff5a",
+      "question": "How do you manually enable Matryoshka Embeddings support in vLLM for models that aren't automatically recognized?"
+    },
+    {
+      "question_id": "ddde3001-b4cf-402a-ada0-50751cf7c729",
+      "question": "How can you change the output dimensions of embedding models that support Matryoshka Embeddings in vLLM?"
+    },
+    {
+      "question_id": "d045d6a1-62be-43d8-a136-64229dd7c044",
+      "question": "What argument can be used in vLLM to skip loading model weights for troubleshooting?"
+    },
+    {
+      "question_id": "3b1ad622-808b-4eda-b1e4-126a28f4e511",
+      "question": "What changed in vLLM v0.8.0 regarding default sampling parameters?"
+    },
+    {
+      "question_id": "ccc698a3-5504-4590-ae6f-25894ace8efe",
+      "question": "What environment variable enables debug-level logging in vLLM?"
+    },
+    {
+      "question_id": "b1491b8b-12d9-475c-8792-e9f98be5d4de",
+      "question": "How can you test if GPU/CPU communication is working correctly in vLLM?"
+    },
+    {
+      "question_id": "ae2addc8-0d94-402e-833f-5687d2d15313",
+      "question": "How do you adjust the number of GPUs when testing NCCL with a single node in vLLM?"
+    },
+    {
+      "question_id": "2b2cc964-ab84-4a56-b9f6-d24d057f4817",
+      "question": "How do you manually assign node rank and specify IP when encountering torch.distributed.DistNetworkError in vLLM multi-node setup?"
+    },
+    {
+      "question_id": "a8c6e558-8a53-45ef-8884-0105da1acb26",
+      "question": "How do you fix the RuntimeError when starting a new process with vLLM?"
+    },
+    {
+      "question_id": "99c65707-7ac3-4ed4-ad17-02d07b4850c6",
+      "question": "What should you do if you get a \"Model architectures failed to be inspected\" error in vLLM?"
+    },
+    {
+      "question_id": "163d48a0-f1da-4a83-a376-433801a11511",
+      "question": "What error message indicates that vLLM failed to infer the device type?"
+    },
+    {
+      "question_id": "84a96608-6618-462b-a47c-012f0ac914ac",
+      "question": "What causes the NCCL error \"unhandled system error\" during ncclCommInitRank in vLLM distributed serving?"
+    },
+    {
+      "question_id": "a8e7dbd2-458e-428b-a969-cc5e22ce999b",
+      "question": "Which vLLM versions are affected by the zmq bug that can cause hanging?"
+    },
+    {
+      "question_id": "da020f99-9136-49cb-bbb8-d21483bfbc80",
+      "question": "How should security vulnerabilities be reported to the vLLM project?"
+    },
+    {
+      "question_id": "27504293-1bbd-4dbc-87c1-a29d3a58676f",
+      "question": "What is the Docker Hub repository name for vLLM's official OpenAI compatible server image?"
+    },
+    {
+      "question_id": "bfdde602-778a-43d2-a9f6-429d99226be7",
+      "question": "How do you install the development version of Hugging Face Transformers in a vLLM Docker container?"
+    },
+    {
+      "question_id": "b1acc1e4-145b-4492-9587-327238e33dcc",
+      "question": "What argument can be added to build vLLM Docker image only for the current GPU type instead of all GPU types?"
+    },
+    {
+      "question_id": "44d44fb7-4574-44f3-9993-cecda67304cb",
+      "question": "What platform flag should be used when building a vLLM Docker container for aarch64 systems?"
+    },
+    {
+      "question_id": "f7253b26-eb56-4a6c-b4eb-ab1eb00b0c82",
+      "question": "What Docker command should be used to run vLLM with a custom-built Docker image?"
+    },
+    {
+      "question_id": "49fa0270-f55e-44b3-9a6d-de9fafc507c9",
+      "question": "What are the two levels of correctness tests for generative models in vLLM?"
+    },
+    {
+      "question_id": "873a29fd-b294-4d53-aa7b-ce40258faa26",
+      "question": "What is the CLI command for text completion in vLLM?"
+    },
+    {
+      "question_id": "29fc4c8c-5ffb-47d0-b6b3-07ec8ac8e423",
+      "question": "What does vLLM provide for running an OpenAI compatible server with Docker?"
+    },
+    {
+      "question_id": "9affdf84-24cb-4bc8-a9d2-646291b3aaa5",
+      "question": "What are the system requirements for running vLLM on AWS Neuron?"
+    },
+    {
+      "question_id": "2a165588-2d3d-4d50-9516-0efa08fd7900",
+      "question": "How do you build and install vLLM from source for AWS Neuron?"
+    },
+    {
+      "question_id": "b09489aa-7a32-4b1a-8b4c-1420495c4b75",
+      "question": "How can you configure NxD Inference features when using vLLM with AWS Neuron?"
+    },
+    {
+      "question_id": "c00bfe80-a26a-4244-b937-e564e9d4c087",
+      "question": "Does vLLM support dynamic loading of LoRA adapters at runtime when using NxD Inference on AWS Neuron?"
+    },
+    {
+      "question_id": "e1766f93-9ed1-4114-953c-236834fd7943",
+      "question": "What is the known edge case bug in vLLM speculative decoding on AWS Neuron?"
+    },
+    {
+      "question_id": "ae133aa8-e059-4aa7-a34e-26a230a4f3a9",
+      "question": "What does the NEURON_COMPILED_ARTIFACTS environment variable do in vLLM AWS Neuron setup?"
+    },
+    {
+      "question_id": "8c7c776f-d0d6-462f-8ed1-0a8333156dc8",
+      "question": "What makes Python multiprocessing complicated in vLLM?"
+    },
+    {
+      "question_id": "5c5153fa-3a16-4be9-8ce0-50ef9a05f74e",
+      "question": "What is the fastest Python multiprocessing method in vLLM?"
+    },
+    {
+      "question_id": "be956521-7f2f-4a8f-934e-6dad3f97fb5d",
+      "question": "What is the default multiprocessing method used by vLLM?"
+    },
+    {
+      "question_id": "36140ebb-b93d-4531-9058-859baf79743e",
+      "question": "What multiprocessing method does vLLM default to in v1?"
+    },
+    {
+      "question_id": "0ae0f88a-7569-46b1-b87e-19e8f2ec05ce",
+      "question": "What is the first step to implement a basic vLLM model?"
+    },
+    {
+      "question_id": "4546f17e-c328-4247-ad9a-0cbd94998930",
+      "question": "What argument must all vLLM modules include in their constructor for runtime support and quantization?"
+    },
+    {
+      "question_id": "8b1b63a7-a8c8-4f80-9d03-892dcdcfd088",
+      "question": "What method should be added to a custom model class in vLLM to provide a unified interface for text embeddings?"
+    },
+    {
+      "question_id": "62e842c0-97c7-4e24-bd7f-fa464a34c1ee",
+      "question": "What are the different types of parallel linear layers available in vLLM for tensor parallelism?"
+    },
+    {
+      "question_id": "b336583e-9dcd-44cc-aa87-a2337f0f2d7d",
+      "question": "What parameter does vLLM set according to different quantization schemes to support weight quantization in linear layers?"
+    },
+    {
+      "question_id": "22f7539d-c60c-4bb0-8d79-87286f9dcfeb",
+      "question": "How does vLLM handle models with interleaving sliding windows in terms of KV-cache management?"
+    },
+    {
+      "question_id": "0211fedf-88e6-4288-abb6-abe98c12600d",
+      "question": "What is the recommended index strategy when using uv with PyTorch release candidates in vLLM?"
+    },
+    {
+      "question_id": "7bcc05d8-6e73-4731-a064-e24526b54e3e",
+      "question": "What is the extra index URL for PyTorch with CUDA 12.8 support in vLLM?"
+    },
+    {
+      "question_id": "01800966-fa96-4bab-8d24-0cd5b8b45c28",
+      "question": "Why does vLLM update platforms separately rather than all at once when updating PyTorch versions?"
+    },
+    {
+      "question_id": "2d69264c-ed05-4f93-89e1-a82cfd47c732",
+      "question": "What is the shape requirement for prompt_embeds in vLLM's EmbedsPrompt schema?"
+    },
+    {
+      "question_id": "d46908c6-fda1-424c-ab95-c8d480f64e87",
+      "question": "How do you enable prompt embeddings support when launching vLLM's OpenAI-compatible server?"
+    },
+    {
+      "question_id": "de2f1daa-4635-4764-b7df-42079afd8076",
+      "question": "How do you install Tensorizer for use with vLLM?"
+    },
+    {
+      "question_id": "0823c65f-2d17-48b2-a66f-563517c08177",
+      "question": "What command-line argument is required when serving a tensorized model with vLLM?"
+    },
+    {
+      "question_id": "7a77109e-c673-45d2-9eae-58f7087685a9",
+      "question": "How do you limit CPU concurrency when serializing a model with tensorizer in vLLM?"
+    },
+    {
+      "question_id": "46b41dfb-7489-4387-9aac-7d5ad39c0791",
+      "question": "What is the minimum GPU compute capability required for vLLM?"
+    },
+    {
+      "question_id": "7abb7492-b7a9-4d9c-9ac9-7d2fcfb2408f",
+      "question": "What is the recommended way to install vLLM with automatic PyTorch backend selection?"
+    },
+    {
+      "question_id": "cd5e1f0b-1053-4bc0-b4d8-84e003834785",
+      "question": "How do you install vLLM with a specific CUDA version using pip?"
+    },
+    {
+      "question_id": "f0f9a5eb-49ee-4929-9dc1-3f109d79e1ab",
+      "question": "How do you install the latest development version of vLLM with CUDA 12 support?"
+    },
+    {
+      "question_id": "126b3045-cedc-4869-840c-00f922c6003b",
+      "question": "What Python versions are compatible with vLLM wheels built for previous commits?"
+    },
+    {
+      "question_id": "75693db9-6716-4de1-a405-273e29e5aa7b",
+      "question": "How can you install vLLM for development without compilation when only changing Python code?"
+    },
+    {
+      "question_id": "15af517a-f5b1-4be1-bf9f-fa8727ad89be",
+      "question": "What should you do if your source code has a different commit ID than the vLLM wheel?"
+    },
+    {
+      "question_id": "35a50eb1-a49a-41ff-a667-68bf6c800765",
+      "question": "How do you build vLLM from source for CUDA development?"
+    },
+    {
+      "question_id": "94d84a10-58aa-421a-9d2f-1252b29a1e9f",
+      "question": "How do you build vLLM with an existing PyTorch installation?"
+    },
+    {
+      "question_id": "9412871e-004f-4fb5-b5bc-f91c9bc62669",
+      "question": "What Docker image is recommended if you have trouble building vLLM with CUDA?"
+    },
+    {
+      "question_id": "325cd079-52e2-4e81-a4b4-2c4ecdbd0784",
+      "question": "What environment variable should be set to disable binary compilation when building vLLM on non-Linux systems?"
+    },
+    {
+      "question_id": "1d5d47bd-b893-4651-b078-400169de9fb2",
+      "question": "Where can I find instructions for building a vLLM Docker image from source?"
+    },
+    {
+      "question_id": "00b91bb3-0720-42df-8111-b8d254c7a201",
+      "question": "How can you pass list elements individually when using JSON CLI arguments in vLLM?"
+    },
+    {
+      "question_id": "95d4019a-8535-4e35-87c0-0403dad6c01a",
+      "question": "What quantization parameter should be specified when loading a modelopt checkpoint in vLLM?"
+    },
+    {
+      "question_id": "e925cd26-b488-49d0-b48e-603623bfd471",
+      "question": "How do you iterate through generation outputs in vLLM to access both the original prompt and generated text?"
+    },
+    {
+      "question_id": "183ccd06-f356-499d-9e28-b437ee710482",
+      "question": "How do you install LangChain to use with vLLM?"
+    },
+    {
+      "question_id": "a2325363-af9f-455d-9af1-73c735640d25",
+      "question": "What is the CLI command for starting a chat interface in vLLM?"
+    },
+    {
+      "question_id": "67d28a0f-661d-4707-8982-0fa4162b1081",
+      "question": "What backend allows many decoder language models to be automatically loaded in vLLM without manual implementation?"
+    },
+    {
+      "question_id": "11464468-1c5d-4d40-b692-b18268356651",
+      "question": "What is the tensor_parallel_size parameter used for in vLLM?"
+    },
+    {
+      "question_id": "61391d66-9d10-4d70-9b13-bd9fc193c6f1",
+      "question": "How can you disable CUDA graph capturing completely in vLLM?"
+    },
+    {
+      "question_id": "16cc036e-cfe4-46c7-8f1b-58402f6e4fdb",
+      "question": "How can you disable unused modalities completely in vLLM multimodal models?"
+    },
+    {
+      "question_id": "d28499a0-6f8a-4b63-b7f4-2748ef1322a8",
+      "question": "What version of ROCm does vLLM support for AMD GPUs?"
+    },
+    {
+      "question_id": "d1501d52-b446-4c93-b66e-bea705efbe94",
+      "question": "What git commit should I checkout when installing Triton flash attention for ROCm with vLLM?"
+    },
+    {
+      "question_id": "cfc452d5-8d17-4271-a89c-edd20ac374ae",
+      "question": "How do you find your GPU architecture for ROCm installation?"
+    },
+    {
+      "question_id": "a2f46196-73f3-426c-ad12-a12c1f0b18e1",
+      "question": "How do you disable Triton flash attention in vLLM for ROCm installations?"
+    },
+    {
+      "question_id": "e94cfaf5-4c05-4f09-a9ad-94635b6a1e8f",
+      "question": "Where can I find prebuilt Docker images for vLLM optimized for AMD GPUs?"
+    },
+    {
+      "question_id": "23f0e99d-dc5d-48ea-a238-9708074d881c",
+      "question": "What is the recommended way to use vLLM with ROCm?"
+    },
+    {
+      "question_id": "f53905cb-a55e-4753-8163-a0789b1f4f04",
+      "question": "What ROCm versions are supported by vLLM's docker/Dockerfile.rocm?"
+    },
+    {
+      "question_id": "5d560477-7ee6-4c6e-a46b-539326a3735d",
+      "question": "What should be specified in the <path/to/model> parameter when using vLLM with ROCm?"
+    },
+    {
+      "question_id": "8057b43d-f188-4faf-9171-9e0556101e08",
+      "question": "Where can I find information about ROCm feature support in vLLM?"
+    },
+    {
+      "question_id": "9ce4f503-8cc5-4b28-af63-429a50b3ffef",
+      "question": "How do you build a Docker image for vLLM on s390x architecture?"
+    },
+    {
+      "question_id": "c0a14cd9-a7e6-487f-82f8-fe8730946d8e",
+      "question": "What CUDA architectures are supported in vLLM when using CUDA compiler version 12.8 or higher?"
+    },
+    {
+      "question_id": "344878cc-c514-4898-bd14-2db6b5e5601d",
+      "question": "What happens in vLLM's CMake build system when neither CUDA nor HIP installation is found?"
+    },
+    {
+      "question_id": "fd9aea9e-da87-4989-9a56-840ab84b9aaf",
+      "question": "How does vLLM handle CUDA architecture compilation in its CMake build system?"
+    },
+    {
+      "question_id": "d008ebad-e20e-4c07-bc26-04a0352a4bea",
+      "question": "What compiler flag does vLLM use to set NVCC parallelism in CUDA builds?"
+    },
+    {
+      "question_id": "41a8eab7-215d-405c-82cd-852ed039849f",
+      "question": "What CUDA architectures are required for building Marlin kernels in vLLM?"
+    },
+    {
+      "question_id": "0056a95c-672d-4721-87e2-5d923c25ef68",
+      "question": "What happens when Marlin generation fails in vLLM's build process?"
+    },
+    {
+      "question_id": "41c79b2b-bd25-42b5-b4d4-2168adbb0173",
+      "question": "What CUDA architectures are required for building AllSpark kernels in vLLM?"
+    },
+    {
+      "question_id": "22479e31-aaef-492e-b0cd-191798979ec7",
+      "question": "What minimum CUDA compiler version is required for building cutlass_scaled_mm kernels for Hopper in vLLM?"
+    },
+    {
+      "question_id": "9978bc4c-38a6-48b3-b910-ac6da8dd60bd",
+      "question": "What minimum CUDA compiler version is required for cutlass_scaled_mm kernels on Geforce Blackwell SM120?"
+    },
+    {
+      "question_id": "44c05b2c-beec-474d-ad77-8321c26a29a9",
+      "question": "What minimum CUDA compiler version is required for building cutlass_scaled_mm kernels for Blackwell SM100 in vLLM?"
+    },
+    {
+      "question_id": "bb180116-7f5b-4948-ba40-b5f164e115af",
+      "question": "What CUDA architectures does vLLM build the CUTLASS 2.x scaled_mm kernels for?"
+    },
+    {
+      "question_id": "3841702f-7f7f-47b6-aa72-b310afcc173e",
+      "question": "What minimum CUDA compiler version is required for vLLM's 2:4 sparse kernels?"
+    },
+    {
+      "question_id": "f3920065-238d-4537-bcc2-ed4fe144f655",
+      "question": "What is the minimum CUDA compiler version required to build NVFP4 quantization kernels in vLLM?"
+    },
+    {
+      "question_id": "e2f216e5-e8b8-4418-9960-9c107b62d28a",
+      "question": "What minimum CUDA compiler version is required for CUTLASS MoE kernels in vLLM?"
+    },
+    {
+      "question_id": "a1346331-124f-4b0b-822b-b37ff5a6a3f3",
+      "question": "What minimum CUDA Compiler version is required to build grouped_mm_c3x kernels in vLLM?"
+    },
+    {
+      "question_id": "0c0cb472-0bd0-4b9a-8d9d-a52f704d3236",
+      "question": "What is the minimum CUDA compiler version required to build moe_data in vLLM?"
+    },
+    {
+      "question_id": "8e6a2588-e8e8-4143-8495-172b08111e1e",
+      "question": "What minimum CUDA compiler version is required to build blockwise_scaled_group_mm_sm100 kernels in vLLM?"
+    },
+    {
+      "question_id": "7ddc938a-4b0c-4e26-86e9-666e0ab68c28",
+      "question": "What CUDA compiler version is required to build Machete kernels in vLLM?"
+    },
+    {
+      "question_id": "d5df4835-9245-47ba-b9c5-28e690f70c85",
+      "question": "What CUDA architectures are supported for Marlin MOE kernels in vLLM?"
+    },
+    {
+      "question_id": "3daaba9c-52e1-4f9c-b354-13e9a101dbf3",
+      "question": "What CUDA compiler version requirement is needed for Marlin MOE WNA16 source files in vLLM's build system?"
+    },
+    {
+      "question_id": "6cb384d4-0374-4434-ad1f-e85ff47a7c13",
+      "question": "What source files are included in the VLLM ROCM extension when building with HIP?"
+    },
+    {
+      "question_id": "bbf303b1-4eeb-4a98-b9f6-49c44aedb0aa",
+      "question": "What are the main installation methods available for vLLM?"
+    },
+    {
+      "question_id": "50a943ce-91e1-47d4-8d8d-ddb218f7d730",
+      "question": "What datatypes are supported by vLLM's ARM CPU backend?"
+    },
+    {
+      "question_id": "4f1dc941-2a88-4420-a1d7-232fe724f0f1",
+      "question": "What API key should be used when connecting AutoGen to a vLLM server?"
+    },
+    {
+      "question_id": "4ed45bf4-6691-4e84-afe2-1865d620b44a",
+      "question": "Where can I find tutorials for using vLLM with AutoGen?"
+    },
+    {
+      "question_id": "17b189e8-ab2d-48e7-9d19-bd40149ef00c",
+      "question": "Are vLLM inter-node communications secure by default?"
+    },
+    {
+      "question_id": "0a80b510-9f4a-4601-97d4-ba946abc183b",
+      "question": "What should VLLM_HOST_IP be set to according to vLLM security best practices?"
+    },
+    {
+      "question_id": "5beb6e46-d028-42ce-8b72-cc94c672b26c",
+      "question": "What is the default behavior of PyTorch's TCPStore when vLLM uses torch.distributed for communication?"
+    },
+    {
+      "question_id": "41aa3474-d0f3-4018-809f-2da6e3e4c264",
+      "question": "How do you report security vulnerabilities in vLLM?"
+    },
+    {
+      "question_id": "00152ed2-f19e-40cf-877a-4147b9ca4ebc",
+      "question": "What are the prerequisites for deploying vLLM with Helm on Kubernetes?"
+    },
+    {
+      "question_id": "a8d3991a-90f0-4dfc-a227-b2ef35c1db41",
+      "question": "Where can I find the configurable parameters for the vLLM Helm chart?"
+    },
+    {
+      "question_id": "5d68cd62-2984-44d2-829b-b871589a0db0",
+      "question": "What is the default container port for vLLM Helm deployment?"
+    },
+    {
+      "question_id": "964fee73-3d88-41a3-80c7-02144c80be78",
+      "question": "What is the default health check endpoint path for vLLM Helm chart probes?"
+    },
+    {
+      "question_id": "6df32bd6-08a1-4efa-8ba0-7b306c89afdf",
+      "question": "How can you disable sccache in vLLM?"
+    },
+    {
+      "question_id": "7e6699cd-0651-4bd0-acae-16dac818021b",
+      "question": "How does vLLM determine the number of jobs for compilation when MAX_JOBS environment variable is not set?"
+    },
+    {
+      "question_id": "39c6677d-4698-438b-ac90-6d411ce21e03",
+      "question": "What happens when CMake is not found during vLLM build extension setup?"
+    },
+    {
+      "question_id": "3733ed01-ae7a-48c0-b80e-69b8e057bbe9",
+      "question": "What GPU platform is required when using VLLM_USE_PRECOMPILED?"
+    },
+    {
+      "question_id": "c02e5b93-0d11-4252-a854-b3cf197c1462",
+      "question": "What shared library files does vLLM extract from precompiled wheels during setup?"
+    },
+    {
+      "question_id": "9726bf97-9410-4e8a-8c86-2f9ad36849dd",
+      "question": "What conditions must be met for vLLM to detect CUDA availability?"
+    },
+    {
+      "question_id": "b35e7e1f-abdb-41b2-8a8f-3f26523121fe",
+      "question": "What conditions determine if HIP is being used in vLLM's setup process?"
+    },
+    {
+      "question_id": "85a302e0-0479-4583-8a5d-4523fb1b8173",
+      "question": "How does vLLM determine if the target device is a TPU in its setup configuration?"
+    },
+    {
+      "question_id": "bbbffea9-83e2-46b3-8389-4347b266b736",
+      "question": "How does vLLM determine if the target device is CPU in its setup configuration?"
+    },
+    {
+      "question_id": "efb65f9a-585b-4b3d-a579-582dc86ea554",
+      "question": "When does vLLM build custom operations during setup?"
+    },
+    {
+      "question_id": "45f5490e-6525-49f4-b57d-c5ab8d28d792",
+      "question": "How does vLLM determine the NeuronXCC version during setup?"
+    },
+    {
+      "question_id": "de29c456-60fe-4caf-9f3a-c8337daaeb51",
+      "question": "What CUDA version is required for vllm-flash-attn in vLLM?"
+    },
+    {
+      "question_id": "f50b2976-9539-4ef7-ba58-044aa6f758e5",
+      "question": "What CUDA version is required for FA3 in vLLM?"
+    },
+    {
+      "question_id": "cb289b7a-34c3-43b2-affc-bcfbd038c103",
+      "question": "What is the purpose of the find_cuda_init function in vLLM?"
+    },
+    {
+      "question_id": "daf90e8c-5519-46e9-b52d-ffa29ae2c591",
+      "question": "What quantization bit depths does AutoRound support for large language models?"
+    },
+    {
+      "question_id": "24fe6f86-2859-4616-8d9d-ad436f339420",
+      "question": "How do you run an AutoRound quantized model in vLLM?"
+    },
+    {
+      "question_id": "0d1f03df-eab4-4957-bb9f-b8beb0df852c",
+      "question": "How do you enable Automatic Prefix Caching in vLLM?"
+    },
+    {
+      "question_id": "7ae3d1e3-3dec-4cb7-8aef-6448adebb9fc",
+      "question": "What are the limitations of Automatic Prefix Caching in vLLM?"
+    },
+    {
+      "question_id": "903a91f2-d5f5-492e-a9ae-9848746d814f",
+      "question": "What is the purpose of BaseMultiModalProcessor in vLLM?"
+    },
+    {
+      "question_id": "10c8eb25-8cd8-4d6b-a36a-bbab7c8bdbfc",
+      "question": "How does vLLM handle tokenized prompt inputs with multi-modal data when HF processors don't natively support this combination?"
+    },
+    {
+      "question_id": "e9c548e7-6f87-42d4-bcb5-2374e6a3aa67",
+      "question": "What types of prompts can vLLM's multi-modal processor accept?"
+    },
+    {
+      "question_id": "6843b7c5-ed2c-4a70-a1ab-501e7a67044f",
+      "question": "Why does vLLM cache multi-modal outputs from HuggingFace processors?"
+    },
+    {
+      "question_id": "a77f6bc5-cbca-44a5-abd3-de48d1b15393",
+      "question": "How do you install LlamaIndex for vLLM integration?"
+    },
+    {
+      "question_id": "baabb93d-16e0-4b77-a4eb-7c99b0853bbc",
+      "question": "What command should be used to strip timestamps and colorization from CI log files in vLLM?"
+    },
+    {
+      "question_id": "ecacde35-74b2-47cc-89ef-c5138682ac12",
+      "question": "How does vLLM determine if a model exists when serving a model?"
+    },
+    {
+      "question_id": "1d5790d6-7761-4b01-ac95-204150801dd4",
+      "question": "What does vLLM use if a model_type is not directly supported in its list?"
+    },
+    {
+      "question_id": "5a9676df-9f48-4c0a-9207-9094886eed33",
+      "question": "How does vLLM determine which model class to initialize when loading a Hugging Face model?"
+    },
+    {
+      "question_id": "67e9776a-63af-4f65-b5db-ea9c40101add",
+      "question": "Which HuggingFace function does vLLM use to load tokenizers?"
+    },
+    {
+      "question_id": "3d9bd843-3ae6-4072-b7bf-6a836b299751",
+      "question": "What is the default weight format that vLLM tries to load from HuggingFace model hub?"
+    },
+    {
+      "question_id": "dff3709b-1435-4c27-b137-56ed3e344081",
+      "question": "What prefix keyword is required when using LiteLLM with vLLM models?"
+    },
+    {
+      "question_id": "5d298f93-aa87-441f-b05e-0071feba4817",
+      "question": "What prefix keyword is required when using vLLM models with LiteLLM for embeddings?"
+    },
+    {
+      "question_id": "2c3962af-7a41-4cf7-bbaa-73cd235fd0b5",
+      "question": "How can you wake up only the model weights in vLLM during RLHF training to avoid GPU out-of-memory errors?"
+    },
+    {
+      "question_id": "58e09d4c-f54d-460f-981a-0eea84d8c0f2",
+      "question": "What environment variable is required to enable sleep mode in a vLLM server?"
+    },
+    {
+      "question_id": "e1fff60f-1b3c-45c3-9d54-2a9abf062535",
+      "question": "What class does vLLM provide for offline inference?"
+    },
+    {
+      "question_id": "fddcea45-af48-4a50-8b15-52bbacce576e",
+      "question": "What are the two types of models available in vLLM offline inference and how do their outputs differ?"
+    },
+    {
+      "question_id": "7883e212-99d0-4598-b934-992ef404f725",
+      "question": "What are the key capabilities of Ray Data LLM API for offline inference?"
+    },
+    {
+      "question_id": "a35f8e5c-b4f2-48e4-95b4-5466dfd6dc77",
+      "question": "What type of GGUF models does vLLM currently support loading?"
+    },
+    {
+      "question_id": "8c662572-36ad-4c6f-9f3a-c766b606bf99",
+      "question": "How do you use a GGUF model directly through the LLM entrypoint in vLLM?"
+    },
+    {
+      "question_id": "d6dc96bc-09e7-4c5d-8a32-c90aeb0a2cae",
+      "question": "What does the vLLM optimization and tuning guide cover?"
+    },
+    {
+      "question_id": "20b4afa3-ac47-4a2a-a7db-b5f661c1198d",
+      "question": "What are the recommended actions to reduce preemptions in vLLM when KV cache space is insufficient?"
+    },
+    {
+      "question_id": "1a796172-9d89-4aad-9512-664cc88bc876",
+      "question": "Is chunked prefill enabled by default in vLLM V1?"
+    },
+    {
+      "question_id": "a16e6cb0-5603-4aa6-9d18-934f226d2681",
+      "question": "What is tensor parallelism in vLLM and when should it be used?"
+    },
+    {
+      "question_id": "10bf9dae-d160-40bb-b3fb-6663494ee6fc",
+      "question": "How do you enable expert parallelism in vLLM for MoE models?"
+    },
+    {
+      "question_id": "21ff3f51-e99e-4104-beb6-7ef868b08b75",
+      "question": "How do you disable the multi-modal processor cache in vLLM?"
+    },
+    {
+      "question_id": "80f70de7-6c50-4ad6-9699-122620b28bec",
+      "question": "What are the prerequisites for deploying Dify with a vLLM backend?"
+    },
+    {
+      "question_id": "9f727ae2-eb97-4224-bc71-676e52769bb9",
+      "question": "What are the three communication backends available for Expert Parallelism in vLLM?"
+    },
+    {
+      "question_id": "a79d1cee-0d83-4ed1-8aab-85f64a11c49d",
+      "question": "How is the Expert Parallel (EP) size calculated in vLLM?"
+    },
+    {
+      "question_id": "0df7ace4-bbaf-4d03-9b8f-059cf38f3b63",
+      "question": "What backend should be used for multi-node expert parallel deployment in vLLM?"
+    },
+    {
+      "question_id": "da38ec6f-1c45-47e7-9cc4-bc7d7f617152",
+      "question": "What flag is used to run vLLM secondary nodes without an API server in expert parallel deployment?"
+    },
+    {
+      "question_id": "99d9021f-c75a-45cc-9f44-55dc44417246",
+      "question": "What flag is used to enable the Expert Parallel Load Balancer in vLLM?"
+    },
+    {
+      "question_id": "1f13adef-0a63-4ca2-93d1-6bf912abbcba",
+      "question": "What is the recommended value for num-redundant-experts in large scale vLLM expert parallel deployments?"
+    },
+    {
+      "question_id": "2f610131-daca-465b-980a-2c17c5c891df",
+      "question": "What are the two backend types used in vLLM's disaggregated serving architecture for prefill and decode instances?"
+    },
+    {
+      "question_id": "1c5e0d13-c449-411f-b525-4be06714f104",
+      "question": "What API key value should be used when setting up vLLM OpenAI clients for expert parallel deployment?"
+    },
+    {
+      "question_id": "71d7cd5b-7c47-42e1-8d98-474f0b868c66",
+      "question": "What is the minimum prompt length requirement for vLLM's Prefix Disaggregation to work?"
+    },
+    {
+      "question_id": "0acf39a5-b484-4af2-ab13-318189896dde",
+      "question": "What is the purpose of the TPU optimization documentation in vLLM?"
+    },
+    {
+      "question_id": "2afc1d73-f2a8-410f-ac60-e7721be5094b",
+      "question": "Where can I find vLLM setup and installation instructions for Google TPU?"
+    },
+    {
+      "question_id": "ae0b8f2d-1188-4199-b4b2-ad30138a0e21",
+      "question": "What does the --max-num-seqs parameter control in vLLM TPU configuration?"
+    },
+    {
+      "question_id": "cab4a797-0e89-40ce-858e-01c59a4d9936",
+      "question": "Where does vLLM store compiled XLA graphs for TPUs by default?"
+    },
+    {
+      "question_id": "8a0b2a96-a2df-47ee-9f25-57a0bf2ce9f1",
+      "question": "What environment variable can be used to optimize TPU performance when most requests are shorter than the maximum model length?"
+    },
+    {
+      "question_id": "04fa456a-5cf8-49d0-8964-a4de61c82c5e",
+      "question": "What environment variable should be set to enable bucket padding for TPU serving in vLLM?"
+    },
+    {
+      "question_id": "d6d20cf2-8bae-47ab-808a-f5dd8cd57152",
+      "question": "What is the recommended approach for tensor parallelism on TPU single-host deployments?"
+    },
+    {
+      "question_id": "9563f6b5-3de6-4415-b580-070a3902fc77",
+      "question": "What tool does vLLM recommend for optimizing TPU workloads?"
+    },
+    {
+      "question_id": "926de18d-3d84-4456-be30-1f12d437f802",
+      "question": "How do you extend a basic model in vLLM to accept multi-modal inputs?"
+    },
+    {
+      "question_id": "cd3e818b-fbc7-4414-8285-d6900d4258ab",
+      "question": "What method should be implemented to define the placeholder string for multi-modal items in vLLM text prompts?"
+    },
+    {
+      "question_id": "85e0249b-06ff-4e2a-a0fc-336dc1cbe5f8",
+      "question": "What shape must multimodal embeddings have when returned from get_multimodal_embeddings in vLLM multimodal models?"
+    },
+    {
+      "question_id": "b32d2048-41b8-44c5-9c3a-ac86cdb6dab3",
+      "question": "What interface should be added to a multimodal model class in vLLM after implementing the required methods?"
+    },
+    {
+      "question_id": "4d0f06a5-e010-4b6a-bc27-35d2c75eb39f",
+      "question": "What interface should a multimodal model class inherit from in vLLM?"
+    },
+    {
+      "question_id": "860c7aac-6520-413c-ac98-19448b34472a",
+      "question": "What method needs to be overridden in BaseProcessingInfo to specify the maximum number of input items for each modality in vLLM multimodal models?"
+    },
+    {
+      "question_id": "3eebf9c9-5266-4231-b4d0-2721756e4dda",
+      "question": "What class should be inherited to construct dummy inputs for multimodal model processing and memory profiling in vLLM?"
+    },
+    {
+      "question_id": "0fce4b7c-5664-40ac-953d-9057c7946e60",
+      "question": "What abstract methods need to be overridden for memory profiling in vLLM multimodal models?"
+    },
+    {
+      "question_id": "123f7d37-a406-4074-96ec-8bb6ec46c3bf",
+      "question": "How is the number of placeholder feature tokens per image determined in vLLM multimodal models?"
+    },
+    {
+      "question_id": "29a0969f-e8f1-44ee-ada8-3824a1f62360",
+      "question": "How is the number of placeholder feature tokens for an image calculated in vLLM's multimodal implementation?"
+    },
+    {
+      "question_id": "7caf511b-f94e-49f1-84da-9f511c01a5c5",
+      "question": "What factors determine the number of image tokens in vLLM multimodal models?"
+    },
+    {
+      "question_id": "f36b1eb6-77d8-4eb9-b43e-5c6c07085124",
+      "question": "How does Fuyu determine the number of placeholder feature tokens for each item in a batch?"
+    },
+    {
+      "question_id": "1f9bca56-62b7-4c3e-9957-a1251aac3d66",
+      "question": "How are images split into patches in FuyuImageProcessor's preprocess_with_tokenizer_info method?"
+    },
+    {
+      "question_id": "f04912da-37a9-4efc-b388-75d126145212",
+      "question": "What tokens do image patches correspond to in Fuyu multimodal model processing?"
+    },
+    {
+      "question_id": "3881a667-7781-4262-ad5b-e0e879b9c4a1",
+      "question": "What class should you subclass to specify processing details for multimodal models in vLLM?"
+    },
+    {
+      "question_id": "76887ad4-3570-4786-924d-b70e74a10a8e",
+      "question": "What method should be overridden to define the schema of tensors outputted by the HF processor for multi-modal items in vLLM?"
+    },
+    {
+      "question_id": "bd6d05ac-400b-4537-88f8-d08e52cbde64",
+      "question": "What is the shape of image_patches outputted by FuyuImageProcessor in vLLM?"
+    },
+    {
+      "question_id": "81e37f26-1203-40ad-a848-764d187d083f",
+      "question": "What are the differences between mm_kwargs and tok_kwargs when using the _call_hf_processor method in vLLM multimodal processing?"
+    },
+    {
+      "question_id": "faa8f00d-eb86-431f-9f6f-9299693415c6",
+      "question": "What method should be overridden to return prompt update operations in vLLM multimodal processing?"
+    },
+    {
+      "question_id": "efc0388f-b80f-45ea-903a-73564b529ebf",
+      "question": "How does vLLM calculate the number of columns and rows for image feature grids in multimodal models?"
+    },
+    {
+      "question_id": "584acd16-6a1f-4177-bcff-783d2545c199",
+      "question": "How do you register processor-related classes for a multimodal model in vLLM?"
+    },
+    {
+      "question_id": "4ce48116-b13b-43c5-a623-44e0a638b484",
+      "question": "What should you use instead of PromptReplacement when HF processors insert feature tokens without replacing anything in the original prompt?"
+    },
+    {
+      "question_id": "29c9c68f-1dba-4be7-86f0-bf0d216b4ab5",
+      "question": "What should you do when a model doesn't define a HuggingFace processor class on HF Hub in vLLM?"
+    },
+    {
+      "question_id": "f93aea1e-b124-44e2-94aa-5600feabd3db",
+      "question": "What is Haystack and what can it be used for with vLLM?"
+    },
+    {
+      "question_id": "4d3b8a45-b6cf-4eb3-9dab-c581e375cd29",
+      "question": "What components in Haystack can be used to query a vLLM server?"
+    },
+    {
+      "question_id": "8d8ea642-cffe-4e71-b814-c4188fc0da23",
+      "question": "Does vLLM's Speculative Decoding feature support LoRA adapters?"
+    },
+    {
+      "question_id": "7954dc59-41cd-4529-af65-5d7cfa1c4556",
+      "question": "Which vLLM features are not supported on TPU hardware?"
+    },
+    {
+      "question_id": "a7222c82-1bd5-43bb-87b6-4282ff4cf214",
+      "question": "Where can I find information about features supported on AWS Neuron hardware in vLLM?"
+    },
+    {
+      "question_id": "00c7bd31-4ac3-4cab-8624-fd8164abfcfe",
+      "question": "Is torch.compile enabled by default in vLLM's V1 architecture?"
+    },
+    {
+      "question_id": "1921dd8c-68ac-4c8e-8556-cf2611d0a692",
+      "question": "Where does vLLM store torch.compile compilation artifacts by default?"
+    },
+    {
+      "question_id": "ec39d103-f523-439e-832e-ec2c6b65e9b1",
+      "question": "Where are the Dynamo transformed code files saved in vLLM's torch compile cache?"
+    },
+    {
+      "question_id": "30c722b2-de2e-46ea-a08a-aa96146c4a4b",
+      "question": "Where does vLLM store the Dynamo compilation results and computation graph?"
+    },
+    {
+      "question_id": "2cb599a8-4d4f-4b66-b5d0-5a1516bc9c23",
+      "question": "What PyTorch custom op does vLLM use to wrap the attention operation in torch compile?"
+    },
+    {
+      "question_id": "4a69163c-8631-40c5-9277-87f8023b2bcd",
+      "question": "Where are compiled kernels stored when using torch compile in vLLM?"
+    },
+    {
+      "question_id": "15dfe7aa-5adc-4b72-8cdb-a0ed23ebc239",
+      "question": "What happens when vLLM runs the same torch.compile code for the second time with an existing cache directory?"
+    },
+    {
+      "question_id": "54131f31-356c-476c-a227-ecab17e95978",
+      "question": "What is the fastest matrix multiplication kernel in vLLM's torch compile autotuning for an 8x2048 by 2048x3072 matrix multiplication?"
+    },
+    {
+      "question_id": "4f40e0d3-32a8-48b9-88cb-e899e8733fe3",
+      "question": "Why is torch.compile auto-tuning turned off by default in vLLM?"
+    },
+    {
+      "question_id": "3e57dc87-f3b0-4dbe-91ae-279893284e4d",
+      "question": "How can you override the default cudagraph capture sizes in vLLM?"
+    },
+    {
+      "question_id": "6e6d2409-fbed-4ed8-9248-9bff2527ae2b",
+      "question": "How do you enable full cudagraph capture in vLLM to include attention in the cudagraph?"
+    },
+    {
+      "question_id": "b84ac187-660b-4b70-bd43-929901e08518",
+      "question": "What is the primary use case for accessing metrics in vLLM's v1 LLM Engine?"
+    },
+    {
+      "question_id": "7a477644-769b-446f-85d5-42de4dbbbcab",
+      "question": "What are the two main categories of metrics in vLLM?"
+    },
+    {
+      "question_id": "718e9047-5d33-48a1-8e78-c225b6aa2b5d",
+      "question": "What endpoint exposes vLLM v0 metrics in Prometheus-compatible format?"
+    },
+    {
+      "question_id": "f5c0820b-7abc-4963-8f51-ca6747a6d50c",
+      "question": "What are the key vLLM metrics exposed in the Grafana dashboard for monitoring performance?"
+    },
+    {
+      "question_id": "5f35c4d8-fa59-4dbd-9fa6-d9e9978c181d",
+      "question": "What are the engine core events that vLLM records timestamps for to calculate request intervals?"
+    },
+    {
+      "question_id": "32af7a87-9ad5-4c28-bdd9-ebbe213e7bc4",
+      "question": "What intervals are affected when a preemption occurs during decode in vLLM?"
+    },
+    {
+      "question_id": "94e60b10-036e-46de-80a1-a7af4fb01eba",
+      "question": "How often does the LoggingStatLogger in vLLM output metrics information?"
+    },
+    {
+      "question_id": "e006d4e9-372e-4d96-88a1-cafd115bc550",
+      "question": "What HTTP endpoint does vLLM's PrometheusStatLogger use to expose metrics?"
+    },
+    {
+      "question_id": "cabd7283-95cb-4b6c-a5d1-bd7e81caed48",
+      "question": "What vLLM metric tracks the number of requests currently being processed in model execution batches?"
+    },
+    {
+      "question_id": "4359855c-6382-4e4d-a976-33682c3efec7",
+      "question": "How is the prefix cache hit rate calculated in vLLM's Prometheus metrics?"
+    },
+    {
+      "question_id": "c2dd9a19-3bcd-4f5b-a4e0-164b1ab19c72",
+      "question": "What are the recommended steps for deprecating metrics in vLLM?"
+    },
+    {
+      "question_id": "db086a1b-0520-4635-a061-7f96dc1ba7cc",
+      "question": "What metrics are planned for parallel sampling support in vLLM?"
+    },
+    {
+      "question_id": "99adb81f-8cbc-4091-900c-6a23ec3672dd",
+      "question": "What is the main goal for vLLM metrics in relation to autoscaling?"
+    },
+    {
+      "question_id": "2ed9532a-b0ee-4dfd-8d68-7c5261ad8d0b",
+      "question": "What happens to the _total suffix when exposing time series for counter metrics in vLLM?"
+    },
+    {
+      "question_id": "0c4201aa-3b0d-41fe-a3e7-ec1048180fa9",
+      "question": "What are the configuration options for OpenTelemetry tracing in vLLM?"
+    },
+    {
+      "question_id": "893366ab-6840-4c28-840a-cd70e3a453ab",
+      "question": "What are the two OpenTelemetry model timing metrics available in vLLM v0?"
+    },
+    {
+      "question_id": "343e0841-5a4f-4114-929f-4bc8c312b054",
+      "question": "How do you start a vLLM OpenAI-compatible server from the command line?"
+    },
+    {
+      "question_id": "c2ce6886-8d00-4c66-b8d7-5e12399ec108",
+      "question": "What OpenAI APIs does vLLM's OpenAI-compatible server support?"
+    },
+    {
+      "question_id": "fe7fd325-7013-404a-a686-40d868986693",
+      "question": "What parameter is used to manually specify a chat template when serving a model with vLLM?"
+    },
+    {
+      "question_id": "bb46cbab-8891-45fc-aaa7-5a5ec6318d76",
+      "question": "What CLI argument can be used to override the chat template content format in vLLM's OpenAI compatible server?"
+    },
+    {
+      "question_id": "872829c7-355f-4e82-9478-7b3da85c6b3d",
+      "question": "What HTTP request header is supported by vLLM's OpenAI compatible server?"
+    },
+    {
+      "question_id": "a2b95fc6-426d-476f-9243-77c27e93a202",
+      "question": "What Python client can be used to interact with vLLM's OpenAI-compatible Completions and Chat APIs?"
+    },
+    {
+      "question_id": "e952b801-727f-4eee-9802-5506266702d8",
+      "question": "What Python client can be used to interact with vLLM's Embeddings API?"
+    },
+    {
+      "question_id": "4e658668-9e1d-4068-ae99-1f77bab83523",
+      "question": "What flag must be explicitly passed when serving VLM2Vec-Full model in vLLM to run it in embedding mode?"
+    },
+    {
+      "question_id": "fe49621a-01cd-4a71-a081-3291e16a4b86",
+      "question": "What runner flag is required when serving the DSE-Qwen2-MRL model in vLLM?"
+    },
+    {
+      "question_id": "d0ceb14f-7db0-450e-8e48-37850126b69d",
+      "question": "How do you install vLLM with audio dependencies for the Transcriptions API?"
+    },
+    {
+      "question_id": "ab7d5e2a-dbb1-4755-9605-30324f0a5124",
+      "question": "What does vLLM's Classification API automatically do to transformer models that aren't sequence-classification models?"
+    },
+    {
+      "question_id": "6da9f7df-af46-4488-8362-f4a9be692bdf",
+      "question": "How can you send multiple texts for classification to vLLM's OpenAI-compatible server?"
+    },
+    {
+      "question_id": "5884766a-7ead-4ea1-a4a5-b608bf0e7bd3",
+      "question": "How do you perform batch inference with the vLLM scoring endpoint?"
+    },
+    {
+      "question_id": "48723b36-2167-4949-a96c-1d599716c645",
+      "question": "What is the structure of a vLLM reranking API response?"
+    },
+    {
+      "question_id": "e3932b6f-2c50-4f39-ba98-907f921cb198",
+      "question": "How do you serve the JinaVL-Reranker model for multi-modal scoring in vLLM?"
+    },
+    {
+      "question_id": "f9786790-150b-4979-b708-0bcaa08cde91",
+      "question": "What scale do similarity scores use in vLLM's Re-rank API?"
+    },
+    {
+      "question_id": "91a96b50-a0ee-4aab-9cb5-b7dde025e10a",
+      "question": "What are the key capabilities of Ray Serve LLM for vLLM deployment?"
+    },
+    {
+      "question_id": "119ee232-4abe-4857-a0f2-3cc23dd4d96f",
+      "question": "What Python versions are supported for vLLM CPU installation?"
+    },
+    {
+      "question_id": "bc3f2699-8967-4943-b32a-8fa0d8e01c0a",
+      "question": "What are the two ways to set up vLLM using Docker for CPU installation?"
+    },
+    {
+      "question_id": "722f548c-a273-44a4-a97c-22922282aaca",
+      "question": "What is the default value for VLLM_CPU_KVCACHE_SPACE environment variable?"
+    },
+    {
+      "question_id": "c46ca877-50ec-48ca-8273-6e43e571fd21",
+      "question": "What dtype is recommended for vLLM CPU to avoid performance or accuracy problems?"
+    },
+    {
+      "question_id": "62e2b851-594b-4e4d-9c40-671aa88d1ab8",
+      "question": "What is the recommended thread-binding setting for VLLM_CPU_OMP_THREADS_BIND in vLLM CPU installation?"
+    },
+    {
+      "question_id": "8ebb41a3-5ff8-481a-8006-4577b706c0f5",
+      "question": "How do you bind OpenMP threads to specific CPU cores when using vLLM CPU backend?"
+    },
+    {
+      "question_id": "04c53186-d4bf-43cc-b648-10f7367faab6",
+      "question": "What is the default value of VLLM_CPU_KVCACHE_SPACE in vLLM CPU installation?"
+    },
+    {
+      "question_id": "9f93f66f-1ccf-4982-80ec-742d5503e18e",
+      "question": "What quantization methods are supported by vLLM CPU?"
+    },
+    {
+      "question_id": "3fa22a76-37aa-4803-b5da-8414a4e371ab",
+      "question": "What schema should be followed when inputting multi-modal data in vLLM offline inference?"
+    },
+    {
+      "question_id": "01d5bf8f-c474-48bc-844e-272afee67ed3",
+      "question": "How do you pass image data to vLLM for multimodal inference?"
+    },
+    {
+      "question_id": "93fc004b-a7ef-45a6-a46d-a55619d207f7",
+      "question": "How do you pass multiple images to vLLM's LLM.chat method?"
+    },
+    {
+      "question_id": "5e3227f5-afcb-448f-ae70-95df87efc62b",
+      "question": "How can multi-image input be extended for video captioning in vLLM?"
+    },
+    {
+      "question_id": "753a2a23-6c79-4835-a30b-1378ebd7306f",
+      "question": "What data types can be passed to the 'video' field in vLLM's multi-modal dictionary for video inputs?"
+    },
+    {
+      "question_id": "60cd4e5e-54f9-41f9-9a32-7578a38279ac",
+      "question": "Which models support the 'process_vision_info' function in vLLM?"
+    },
+    {
+      "question_id": "ba5d57a6-c001-4ac6-893e-369c75be5c6a",
+      "question": "How do you pass audio inputs to vLLM's multimodal dictionary?"
+    },
+    {
+      "question_id": "21ec1538-56ee-4ebc-b365-a23693ab30b0",
+      "question": "What shape should pre-computed embeddings have when inputting them directly to a language model in vLLM?"
+    },
+    {
+      "question_id": "30c9d2db-ce52-43be-8231-0ceca8125a49",
+      "question": "How do you access the generated text from vLLM multimodal outputs?"
+    },
+    {
+      "question_id": "02a4bf37-e15c-4a12-8dbf-96b8537d5940",
+      "question": "What is required to use the Chat Completions API in vLLM's OpenAI-compatible server?"
+    },
+    {
+      "question_id": "d7dfbc1b-cb11-47d0-94ee-c31440c51cc5",
+      "question": "How do you launch a vLLM server for the Phi-3.5-vision-instruct model with image support?"
+    },
+    {
+      "question_id": "ce9ab7a8-c439-459d-a058-032a257db34d",
+      "question": "What is the default timeout for fetching images through HTTP URL in vLLM?"
+    },
+    {
+      "question_id": "f91d4c7f-8bda-4cdf-8613-fc746027dadd",
+      "question": "How do you serve a model with audio input support in vLLM?"
+    },
+    {
+      "question_id": "e62c6d60-c307-460e-81aa-ed8ef69a7eee",
+      "question": "How do you pass image embeddings to vLLM's OpenAI server?"
+    },
+    {
+      "question_id": "f4b62826-9b5e-4e2f-8fbd-6996fdb34a2d",
+      "question": "How many messages can contain image_embeds type in vLLM multimodal inputs?"
+    },
+    {
+      "question_id": "d4e6c7a2-a42f-4d68-bdf7-479b15930c68",
+      "question": "What versioning scheme does vLLM use for deprecations and feature removals?"
+    },
+    {
+      "question_id": "24e3e648-fb6a-41e1-9b7e-2f7cd65f3dd3",
+      "question": "Are deprecated features allowed to be removed in vLLM patch releases?"
+    },
+    {
+      "question_id": "58535655-189b-41be-a6cc-e3a388c1b9e8",
+      "question": "What types of models does vLLM support?"
+    },
+    {
+      "question_id": "4d53bf9c-9502-47f0-9f0e-6ccd0afc2886",
+      "question": "Where can I find the implementation of models natively supported by vLLM?"
+    },
+    {
+      "question_id": "b79531d8-e18f-4b6e-880d-75a059a7b41c",
+      "question": "How can you check if vLLM is using the Transformers modeling backend?"
+    },
+    {
+      "question_id": "2ed1740f-1f2b-4e8d-802d-a4a8fd0fe036",
+      "question": "What parameter should be set when using a custom model from Hugging Face Model Hub in vLLM?"
+    },
+    {
+      "question_id": "88f0ba94-585a-41c1-8bfa-2280ea219504",
+      "question": "What three requirements must a custom model meet to be compatible with vLLM's Transformers backend?"
+    },
+    {
+      "question_id": "a9ffec07-33e8-4671-88fb-7578362ef45d",
+      "question": "What tensor parallel styles are currently supported in vLLM's base_model_tp_plan configuration?"
+    },
+    {
+      "question_id": "414f2136-9b23-4b96-9c46-ea4c62d3d701",
+      "question": "How can you check if a model is supported in vLLM at runtime?"
+    },
+    {
+      "question_id": "e7dac573-0663-4614-9f09-4c2d1b973b26",
+      "question": "How do you download a model using the Hugging Face CLI?"
+    },
+    {
+      "question_id": "443bcb24-a780-41c9-b8fc-9470a958f1ce",
+      "question": "How do you configure vLLM to use ModelScope instead of Hugging Face Hub for downloading models?"
+    },
+    {
+      "question_id": "8b654ef5-53f5-4799-8b1a-9174dcf7021b",
+      "question": "What do the symbols ✅, 🚧, and ⚠️ mean in vLLM's supported models documentation?"
+    },
+    {
+      "question_id": "e65598a1-d8a6-4ab6-9e87-0f85b10b4c92",
+      "question": "What type of language models are listed in the vLLM supported models documentation?"
+    },
+    {
+      "question_id": "8d1b85a8-958a-4c57-9f58-a88ff7288998",
+      "question": "What APIs do text generation models support in vLLM?"
+    },
+    {
+      "question_id": "5d4a0277-1012-4b9f-bf9d-4f7eeca6c425",
+      "question": "Which model architectures in vLLM support LoRA fine-tuning?"
+    },
+    {
+      "question_id": "d31e7e53-6742-4f75-8201-f7d9e5d99ca3",
+      "question": "Which model architecture is used for DeepSeek-V3 models in vLLM?"
+    },
+    {
+      "question_id": "d4788c3d-936f-4ee9-a68f-0aa6b6cbe54b",
+      "question": "Which model classes in vLLM support GPT-2 models?"
+    },
+    {
+      "question_id": "cc0122c5-40dd-49f1-82ef-a809228ccf7b",
+      "question": "Which vLLM model class supports Phi-4 and Phi-3 models?"
+    },
+    {
+      "question_id": "a0bb9613-61fb-4939-94b7-9ce21d74643a",
+      "question": "Which vLLM model class is used for Qwen2MoE models?"
+    },
+    {
+      "question_id": "9e025c2b-a03e-4bea-ba4a-cf14e7863fdd",
+      "question": "What is the maximum context length supported for Mistral and Mixtral models in the ROCm version of vLLM?"
+    },
+    {
+      "question_id": "0687aaac-9649-425e-99b8-a866433d306f",
+      "question": "What runner parameter should be specified to use a model in pooling mode instead of generative mode in vLLM?"
+    },
+    {
+      "question_id": "ca6ab719-1013-49ea-b426-7de65a1ad9da",
+      "question": "What API do embedding models primarily support in vLLM?"
+    },
+    {
+      "question_id": "cf24f3a1-67ef-4512-b496-41e3650f7f08",
+      "question": "What configuration override is needed for ssmits/Qwen2-7B-Instruct-embed-base model in vLLM?"
+    },
+    {
+      "question_id": "bd08ddf7-60b3-450d-9160-ce5e7bae040b",
+      "question": "What API do classification models in vLLM primarily support?"
+    },
+    {
+      "question_id": "39703340-451c-43d3-89c1-9272fdeb73ac",
+      "question": "Which cross-encoder architectures in vLLM support LoRA, pipeline parallelism, and V1?"
+    },
+    {
+      "question_id": "ac46b13f-aeb2-4fe1-973e-2c333588378f",
+      "question": "How do you load the official original mxbai-rerank-v2 model in vLLM?"
+    },
+    {
+      "question_id": "866f922a-e199-48ea-b5b2-f3daae1d2a45",
+      "question": "Which API do reward modeling architectures in vLLM primarily support?"
+    },
+    {
+      "question_id": "b998f40a-b983-4a74-9179-51e380361bc0",
+      "question": "How do you enable multiple multi-modal items per text prompt in vLLM V0?"
+    },
+    {
+      "question_id": "8142cc9e-7570-4e75-9366-5af3963cd690",
+      "question": "Where can I find information about using generative models in vLLM?"
+    },
+    {
+      "question_id": "dd8187db-055f-4ae2-a54f-ead90103ba1d",
+      "question": "What APIs do text generation models support in vLLM?"
+    },
+    {
+      "question_id": "403cdfc9-e690-4a66-97a2-91917bce2118",
+      "question": "Which multimodal models in vLLM support LoRA fine-tuning?"
+    },
+    {
+      "question_id": "f8a4c471-2958-4324-a6c7-7b8532d8100e",
+      "question": "What modalities does the GLM-4.5V model support in vLLM?"
+    },
+    {
+      "question_id": "dfcf88e1-1e11-4837-8019-b3f9d98963aa",
+      "question": "What modalities does the MiniCPM-O model support in vLLM?"
+    },
+    {
+      "question_id": "a91eee7b-7584-4d37-aeb1-ed9bcaaf69ae",
+      "question": "Which vLLM model class supports the Phi-4-multimodal architecture?"
+    },
+    {
+      "question_id": "9d367b44-0694-4619-a180-a8693913830e",
+      "question": "What model architectures does vLLM support for SmolVLM2 and Step3-VL models?"
+    },
+    {
+      "question_id": "f24f6f5e-e82b-4913-adfa-ad5704da7664",
+      "question": "What backend does vLLM use for Emu3 models and what input types does it support?"
+    },
+    {
+      "question_id": "6b18dda4-279e-40a0-a83f-98cfb47d1545",
+      "question": "What attention pattern does V1 currently use for multimodal models in vLLM?"
+    },
+    {
+      "question_id": "6c0a78ff-39f4-4e79-8509-114e2f2addec",
+      "question": "What fork should be used instead of the official openbmb/MiniCPM-V-2 model in vLLM?"
+    },
+    {
+      "question_id": "c0b41297-98a8-45fb-93cb-a964b6ffa06d",
+      "question": "What are the supported Speech2Text model architectures in vLLM for automatic speech recognition?"
+    },
+    {
+      "question_id": "bbb0beda-ee63-4f06-a439-7f3cb1f793dd",
+      "question": "What API is primarily supported by embedding models in vLLM?"
+    },
+    {
+      "question_id": "3b0114de-afe2-4fac-a321-c18c87184fc6",
+      "question": "What API do cross-encoder and reranker models primarily support in vLLM?"
+    },
+    {
+      "question_id": "869f2502-ceab-4497-bf2e-c7f697bba5b7",
+      "question": "What is vLLM's approach to supporting third-party models?"
+    },
+    {
+      "question_id": "c0dc0068-3de6-42eb-b506-4a74399ff151",
+      "question": "What directory should users monitor to track changes for specific models in vLLM?"
+    },
+    {
+      "question_id": "6148a646-a4e3-4a04-98b1-c15f03f061ca",
+      "question": "What are the four levels of testing for models in vLLM?"
+    },
+    {
+      "question_id": "7f572f76-2cd2-4fbd-80e8-c5c67972fdb5",
+      "question": "What are the supported Python versions for vLLM?"
+    },
+    {
+      "question_id": "83b7dec3-8329-4746-9da3-6d953479a461",
+      "question": "What environment variable should be set to use models from ModelScope instead of Hugging Face in vLLM?"
+    },
+    {
+      "question_id": "0227c68c-40b3-4e98-97a2-4757c261dfba",
+      "question": "How do you use the chat interface in vLLM to generate text from a list of messages?"
+    },
+    {
+      "question_id": "cdf48a57-a5da-42db-bb7b-06e15be11290",
+      "question": "What is the default address and port for the vLLM OpenAI-compatible server?"
+    },
+    {
+      "question_id": "84b1c627-c8df-480e-8c7d-c2fffe06f1fe",
+      "question": "What is the default port and endpoint for querying vLLM server using OpenAI Completions API?"
+    },
+    {
+      "question_id": "f3e58c56-2c1c-4acd-a40a-60305dccf462",
+      "question": "What OpenAI API endpoint does vLLM support for interactive chat conversations?"
+    },
+    {
+      "question_id": "a3ee1a66-4718-4f65-a9d9-ca12cc4c876d",
+      "question": "How can you manually set the attention backend in vLLM?"
+    },
+    {
+      "question_id": "5d92f052-989e-4c1a-b3ae-c653f16cf477",
+      "question": "What types of changes are allowed as cherry-picks to vLLM release branches after branch cut?"
+    },
+    {
+      "question_id": "99f0b809-1905-4f24-82e6-fa7c7866418d",
+      "question": "What models are currently covered in vLLM's end-to-end performance validation before each release?"
+    },
+    {
+      "question_id": "49a58c45-c110-448d-bcaf-a9de9a17d65e",
+      "question": "What Python environment manager is recommended for setting up vLLM?"
+    },
+    {
+      "question_id": "2d96ab75-4dc6-421c-bc75-dfe52281b443",
+      "question": "What interface do generative models implement in vLLM?"
+    },
+    {
+      "question_id": "534c617c-3475-41c5-a3bc-357ee4c359a9",
+      "question": "How do you enable greedy sampling in vLLM's generate method?"
+    },
+    {
+      "question_id": "4429d001-2923-406b-be15-89d52feb8c97",
+      "question": "How do you configure beam search parameters in vLLM?"
+    },
+    {
+      "question_id": "653b4233-4f38-4cda-b6d7-dc9a5d91d785",
+      "question": "What vLLM method implements chat functionality on top of generate?"
+    },
+    {
+      "question_id": "2a26076a-2fd1-48e9-b40d-5882ca71bf14",
+      "question": "What are the two main API endpoints provided by vLLM's OpenAI-Compatible Server?"
+    },
+    {
+      "question_id": "df54a468-90f4-4356-b749-35331e2865e1",
+      "question": "How do you interact with a vLLM model deployed through dstack using the OpenAI SDK?"
+    },
+    {
+      "question_id": "b8e88696-3292-4411-8609-4a90c6c559a3",
+      "question": "What is speculative decoding in vLLM and what does it improve?"
+    },
+    {
+      "question_id": "d002fa05-b524-48be-a3b7-3e170513cb3f",
+      "question": "How many tokens does vLLM speculate at a time when using speculative decoding with a draft model?"
+    },
+    {
+      "question_id": "2b23c299-f0a0-4eec-8bda-15a0d3812e2b",
+      "question": "How do you create a completion using the OpenAI client in vLLM?"
+    },
+    {
+      "question_id": "c225c5ac-f7b8-4621-9142-6d77d57354eb",
+      "question": "What method should be specified in vLLM's speculative_config to enable n-gram matching for speculative decoding?"
+    },
+    {
+      "question_id": "27173445-cc84-4c72-9a33-f97828bcb64a",
+      "question": "What is the current limitation when using MLP speculators for speculative decoding in vLLM?"
+    },
+    {
+      "question_id": "4169c6af-8ea0-4db2-aa55-56eedf47b8ce",
+      "question": "What speculative models are available on Hugging Face Hub for vLLM speculative decoding?"
+    },
+    {
+      "question_id": "d3b61846-8ff1-4fb5-b0a1-71539eb459e2",
+      "question": "How do you configure vLLM to use EAGLE-based draft models for speculative decoding?"
+    },
+    {
+      "question_id": "f5ef189e-b94e-45a7-8424-89b22ff7529a",
+      "question": "What is the required tensor parallelism setting for EAGLE based draft models in vLLM?"
+    },
+    {
+      "question_id": "846ecd89-b90c-40f3-9a1e-54616c0f1d35",
+      "question": "What are the three key areas of lossless guarantees in vLLM's speculative decoding?"
+    },
+    {
+      "question_id": "dee3448b-efa4-4673-8446-2428845b0f92",
+      "question": "What factors can cause variations in generated outputs when using vLLM's speculative decoding?"
+    },
+    {
+      "question_id": "041daeb4-1f27-4a3a-940b-9b691532b12b",
+      "question": "What resources are available for vLLM contributors working on speculative decoding?"
+    },
+    {
+      "question_id": "4e3921d8-a4be-40f0-ba81-f769dbf966d5",
+      "question": "What backends does vLLM support for generating structured outputs?"
+    },
+    {
+      "question_id": "67548bc8-c046-4c7a-8750-9ad4416860c9",
+      "question": "What parameters are supported for generating structured outputs in vLLM's OpenAI-compatible API?"
+    },
+    {
+      "question_id": "c4f14fa2-381b-4129-a8d7-dab7691cb8c0",
+      "question": "How do you generate structured text output with a specific regex pattern in vLLM?"
+    },
+    {
+      "question_id": "c516f4da-985e-4bcc-9522-d158db117fa2",
+      "question": "What is the guided_grammar option used for in vLLM structured outputs?"
+    },
+    {
+      "question_id": "6a9f97c6-5e41-4d92-923a-0321b00728c8",
+      "question": "Where can I find a complete example of structured outputs in vLLM?"
+    },
+    {
+      "question_id": "844799ce-462a-499d-9187-7a83d7648559",
+      "question": "How do you serve a reasoning model with structured outputs in vLLM?"
+    },
+    {
+      "question_id": "7c7c2808-85dd-47fb-beba-a8a8cd0162fb",
+      "question": "What OpenAI client method does vLLM support for experimental automatic parsing with structured outputs?"
+    },
+    {
+      "question_id": "dab5d35d-02a9-4ef3-a604-2ef45c2327c2",
+      "question": "How do you access the parsed response from OpenAI's structured output completion in vLLM?"
+    },
+    {
+      "question_id": "2d6cf054-cb81-4383-990e-d4ba15e3cbb3",
+      "question": "What type of object is returned when using vLLM's structured outputs for chat completions?"
+    },
+    {
+      "question_id": "02367cc2-5576-4efb-b45a-7407cf4e1708",
+      "question": "What class is used to configure guided decoding for structured outputs in vLLM offline inference?"
+    },
+    {
+      "question_id": "40f0c759-480f-4c69-aba8-366908c46bcc",
+      "question": "How do you fix vLLM model resolution issues when the config.json lacks the architectures field?"
+    },
+    {
+      "question_id": "f3a6908d-8f56-49f2-a7f5-1ab493e23715",
+      "question": "Should vLLM end-users enable profiling for their applications?"
+    },
+    {
+      "question_id": "69c07d40-19b5-46fb-bee2-cc417de241c3",
+      "question": "How do you enable PyTorch profiler tracing in vLLM?"
+    },
+    {
+      "question_id": "2a2530b5-040e-4b4a-ab87-c8995f4cf1cb",
+      "question": "What environment variable should be set to specify the directory for vLLM torch profiler output?"
+    },
+    {
+      "question_id": "211074dd-10e3-42a8-91e6-0c81eb065c3a",
+      "question": "What command should be prepended to vllm bench latency for profiling with NVIDIA Nsight Systems?"
+    },
+    {
+      "question_id": "c29e8093-f6b1-48ff-9de0-27a857ab9834",
+      "question": "What nsys profile command options are used to profile a vLLM server with CUDA graph tracing?"
+    },
+    {
+      "question_id": "a96651ed-cd58-46ec-89b5-0898c37e3a24",
+      "question": "How do you manually stop an nsys profiling session in vLLM?"
+    },
+    {
+      "question_id": "d287b148-df39-43e4-8ef3-d858cec57248",
+      "question": "How can you view Nsight Systems profiles in vLLM?"
+    },
+    {
+      "question_id": "c4b63468-f938-4a60-81cd-3ff1da221482",
+      "question": "What are the two vLLM utility functions for profiling Python code?"
+    },
+    {
+      "question_id": "93961394-35a5-46ac-8b24-ce4e793d90da",
+      "question": "How do you achieve reproducible results in vLLM?"
+    },
+    {
+      "question_id": "45f4c51a-30da-43d3-8d1c-0c80a20a394a",
+      "question": "What are the two build options available when developing vLLM?"
+    },
+    {
+      "question_id": "45ad3b7c-0fc9-4797-98a4-70f3e0159aac",
+      "question": "What Python version does vLLM recommend for development to minimize CI environment conflicts?"
+    },
+    {
+      "question_id": "f1d07e49-672a-4320-9f3a-7c0982ae58c8",
+      "question": "What workflow is recommended when actively developing or modifying kernels in vLLM?"
+    },
+    {
+      "question_id": "3eacec8d-ea9e-44ee-80e2-f2e1af415a0f",
+      "question": "What endpoint does vLLM use to expose production metrics?"
+    },
+    {
+      "question_id": "b46e68b0-8f03-4df6-8dd2-0d540ecd66e7",
+      "question": "What is the minimum version of BitBLAS required to install for use with vLLM?"
+    },
+    {
+      "question_id": "f10a2ca2-7bbf-4f2b-90b5-b4f0c372ea39",
+      "question": "How do you disable vLLM V1?"
+    },
+    {
+      "question_id": "f187af2c-67da-41a8-950e-27af2ffdb031",
+      "question": "What are the main goals that vLLM V1 aims to achieve?"
+    },
+    {
+      "question_id": "c85b2bbc-352e-48c6-b2d5-eb1783967126",
+      "question": "What scheduling policies does vLLM V1 scheduler support?"
+    },
+    {
+      "question_id": "6313a01d-a44b-4bb7-b8a6-8dea015ad271",
+      "question": "What hardware platforms does vLLM support?"
+    },
+    {
+      "question_id": "a3faaa67-3429-4a2f-8438-4166d6fc24b0",
+      "question": "What is the current status of embedding models in vLLM V1?"
+    },
+    {
+      "question_id": "9e296357-6318-4bf8-bc18-aff81298ab31",
+      "question": "What special configuration is required for Mamba-1 models in vLLM V1?"
+    },
+    {
+      "question_id": "634c920f-4040-42c9-a4ba-af126eef8fd8",
+      "question": "What is the status of FP8 KV Cache feature in vLLM?"
+    },
+    {
+      "question_id": "e2d7e714-d33f-4074-bae4-57df36a3c653",
+      "question": "How does vLLM V1's unified scheduler allocate tokens for requests?"
+    },
+    {
+      "question_id": "0f82c735-c295-4d3b-abf7-f474dc9e7555",
+      "question": "What deployment framework can be used to deploy an LLM server with vLLM as the backend that exposes OpenAI-compatible endpoints?"
+    },
+    {
+      "question_id": "251e3c3f-d368-4e71-85dd-c20013fedebd",
+      "question": "What is the purpose of vLLM's plugin system?"
+    },
+    {
+      "question_id": "0d89d772-ef7b-4e46-92ef-a55334ce826f",
+      "question": "What entry point group does vLLM use to register general plugins?"
+    },
+    {
+      "question_id": "1031a74c-f32b-4edc-b031-07fd2ccc30ba",
+      "question": "What are the two types of supported plugins in vLLM's plugin system?"
+    },
+    {
+      "question_id": "b55f387c-24ef-4a02-9ac4-6b67889fbd41",
+      "question": "What framework can be used to run and scale vLLM to multiple service replicas on clouds and Kubernetes?"
+    },
+    {
+      "question_id": "ae0be9ef-de95-4b60-b99f-a410dfc92d1e",
+      "question": "What port does the vLLM API server use when running on SkyPilot?"
+    },
+    {
+      "question_id": "07ac2054-5080-45ac-9bb3-82382d706345",
+      "question": "How do you serve a 70B model instead of the default 8B model using SkyPilot with vLLM?"
+    },
+    {
+      "question_id": "519c6e57-097f-426d-9ff3-9d5ec6eda596",
+      "question": "How can you scale up vLLM service to multiple replicas in SkyPilot?"
+    },
+    {
+      "question_id": "0b655a7e-d810-4185-94b7-72e85a6ab006",
+      "question": "How do you enable autoscaling for vLLM service deployment in SkyPilot?"
+    },
+    {
+      "question_id": "99fc86e0-8615-4e72-8cf7-f9081a3984e8",
+      "question": "What is the target QPS per replica setting that triggers scaling up in SkyPilot vLLM service configuration?"
+    },
+    {
+      "question_id": "678e4c7f-93b6-4345-8044-b7461009035a",
+      "question": "Can vLLM serve multiple models on a single port using the OpenAI API?"
+    },
+    {
+      "question_id": "091f56d5-c562-489b-925c-79d07fe8e3a5",
+      "question": "Why might the same requests produce different outputs in vLLM?"
+    },
+    {
+      "question_id": "e9c645ce-38ff-413c-89d5-f892c99e927b",
+      "question": "What data type should be used for improved stability and reduced variance in vLLM?"
+    },
+    {
+      "question_id": "d6798ee5-12d6-4a63-b33d-c3b29a2c7438",
+      "question": "What is the minimum NVIDIA GPU compute capability required for INT4 quantization in vLLM?"
+    },
+    {
+      "question_id": "2cfb7657-3bdf-4e81-bfe4-f0dfb8f557f6",
+      "question": "How many calibration samples are recommended when preparing calibration data for INT4 quantization in vLLM?"
+    },
+    {
+      "question_id": "f9e9bcf0-e666-4ab3-b1aa-c59567cea393",
+      "question": "How do you evaluate accuracy of a quantized model using lm_eval in vLLM?"
+    },
+    {
+      "question_id": "7c874b78-6b3f-413e-98cb-6fbc9c8e50b5",
+      "question": "What is the recommended starting number of samples for calibration data in INT4 quantization?"
+    },
+    {
+      "question_id": "ddd15252-3c85-4847-901a-c1eca4e0e3cd",
+      "question": "What are the two main integration options for implementing RAG with vLLM?"
+    },
+    {
+      "question_id": "595075a6-a9c8-44b7-ac38-a30d6b2be093",
+      "question": "What port does the vLLM embedding service run on by default in RAG deployments?"
+    },
+    {
+      "question_id": "5ff10124-c1fe-4d24-bec9-50ef3616d16f",
+      "question": "What does quantization trade off to reduce memory footprint in vLLM?"
+    },
+    {
+      "question_id": "5a2319ab-60b5-4dda-abf5-5bde9eb79e2e",
+      "question": "What type of attention kernel does vLLM currently use for its implementation?"
+    },
+    {
+      "question_id": "775d91e9-6283-4d1a-b39b-d0857912aee4",
+      "question": "What preparations are needed before performing paged attention calculations in vLLM?"
+    },
+    {
+      "question_id": "737da926-03b1-4185-a395-34f942e475b4",
+      "question": "What is a sequence in vLLM's paged attention design?"
+    },
+    {
+      "question_id": "3f50f063-606c-4f3b-8f3d-75f253ea031d",
+      "question": "How does vLLM achieve memory coalescing when reading query data in paged attention?"
+    },
+    {
+      "question_id": "651043b1-6e7f-45d2-8b87-af3aca18bcc6",
+      "question": "What does the k_ptr variable point to in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "4daad759-046b-4038-92cf-a07aa68df161",
+      "question": "Why is register memory used for k_vecs in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "6f656e04-33ab-4a0f-983d-fbd139a2c987",
+      "question": "What happens during the cross thread group reduction in vLLM's paged attention QK computation?"
+    },
+    {
+      "question_id": "34e696da-e9df-4e16-8a44-a0f1cb35594f",
+      "question": "What mathematical operations are required to calculate the normalized softmax in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "d7e28c25-761b-48a0-ade1-a5e459999fe2",
+      "question": "What is stored in the logits array during the qk_max calculation in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "783348a7-2be6-48f9-8517-1ce2ff3d9625",
+      "question": "What is the purpose of adding 1e-6f when computing inv_sum in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "e3e81b43-2bc6-4b29-8226-a8f50bd3cbcd",
+      "question": "How does value data memory layout differ from key token memory layout in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "8e131a8f-7466-42a7-bd76-a1bb5f32f988",
+      "question": "How many inner iterations does a warp need to handle a whole block of value tokens in vLLM's paged attention when BLOCK_SIZE is 16, V_VEC_SIZE is 8, HEAD_SIZE is 128, and WARP_SIZE is 32?"
+    },
+    {
+      "question_id": "a9fdad05-173e-4d8b-ae33-5689f11a8ba6",
+      "question": "What is the purpose of performing reduction for accs within each warp in vLLM's paged attention implementation?"
+    },
+    {
+      "question_id": "0b3105e7-b277-4cfe-93c4-f5f941b3c92f",
+      "question": "How does vLLM write calculated results from local register memory to final output global memory in PagedAttention?"
+    },
+    {
+      "question_id": "8ac30c07-162c-4a4a-a37c-c70aa171a600",
+      "question": "What quantization precisions does GPTQModel support for creating quantized models?"
+    },
+    {
+      "question_id": "a47bb596-56be-4af7-9835-e0872e51e564",
+      "question": "What is the default group_size parameter when creating a QuantizeConfig for GPTQModel 4-bit quantization?"
+    },
+    {
+      "question_id": "d0e2831d-c504-4888-8785-d13e66cbeb0e",
+      "question": "How do you use GPTQModel quantized models with vLLM's Python API?"
+    },
+    {
+      "question_id": "2c4063db-460a-41e3-a6bc-c42ff553eccb",
+      "question": "What command starts the vLLM OpenAI Compatible API server?"
+    },
+    {
+      "question_id": "939eae2d-5ec5-42fd-a5f9-9605e728f137",
+      "question": "What extra dependencies need to be installed to use vLLM benchmark commands?"
+    },
+    {
+      "question_id": "09aa9272-1298-47ba-8451-bd10ad0fcc9b",
+      "question": "What is the vLLM CLI command for benchmarking latency?"
+    },
+    {
+      "question_id": "e8f0e9f0-5c8d-4f65-9f0a-adad5f8683f2",
+      "question": "What is the CLI command to start the vLLM server?"
+    },
+    {
+      "question_id": "3aff1593-e6cf-45ab-8cba-8858d3f98b06",
+      "question": "What are the two main reasons for using disaggregated prefilling in vLLM?"
+    },
+    {
+      "question_id": "c1df0afa-7df9-4ff2-ae6a-de586e159393",
+      "question": "How many types of connectors does vLLM support for disaggregated prefilling?"
+    },
+    {
+      "question_id": "f60c8f81-368b-4be8-8743-c6a45aa271d8",
+      "question": "What are the three key abstractions used in vLLM's disaggregated prefilling implementation?"
+    },
+    {
+      "question_id": "d7b9bd6c-7276-487f-9fcd-682c8270ce2e",
+      "question": "What are the three recommended ways to implement third-party connectors for disaggregated prefilling in vLLM?"
+    },
+    {
+      "question_id": "c6a891c5-4ca2-47d7-a3f9-d1f89c6169df",
+      "question": "What configuration classes are available in vLLM's API documentation?"
+    },
+    {
+      "question_id": "98b55107-f910-408a-99d2-c902e6382a6f",
+      "question": "What are the two main inference parameter types available in vLLM APIs?"
+    },
+    {
+      "question_id": "2764593a-51dc-4e38-9fac-2a9bf0784f33",
+      "question": "What data types does vLLM support for x86 CPU inference?"
+    },
+    {
+      "question_id": "0b3b911e-3088-4c6e-ba71-b52d53957f37",
+      "question": "What Docker port should be exposed when launching a vLLM OpenAI server on x86 CPU?"
+    },
+    {
+      "question_id": "5845bdef-27bb-40e1-8748-d4c5d1e1c79b",
+      "question": "What Docker network name should be created for vLLM nginx load balancing setup?"
+    },
+    {
+      "question_id": "db1c0264-b05a-438c-bb18-9693f9a58a50",
+      "question": "How can I verify that vLLM servers are ready when using Docker containers?"
+    },
+    {
+      "question_id": "68afebcb-5d64-483e-bba1-544e1b42a255",
+      "question": "What is the primary Python interface for doing offline inference in vLLM?"
+    },
+    {
+      "question_id": "43caec5a-4f7f-483a-b7c2-6591aafb57be",
+      "question": "How do you start the vLLM OpenAI-compatible API server?"
+    },
+    {
+      "question_id": "2c640f76-724c-4b80-8fe6-3ecc6688ea22",
+      "question": "What are the four main responsibilities of the LLMEngine class in vLLM?"
+    },
+    {
+      "question_id": "69ff3884-5092-4aa8-bff1-1e30079d19f0",
+      "question": "What is the relationship between tensor parallelism size, pipeline parallelism size, and total number of workers in vLLM?"
+    },
+    {
+      "question_id": "90763351-48e6-4bb6-9430-4c0528f9f04b",
+      "question": "What is the main configuration object that is passed around in vLLM's class hierarchy?"
+    },
+    {
+      "question_id": "199a2d1c-8485-480f-9e80-2eb2f57ead62",
+      "question": "How can you make a vLLM model compatible with both old and new versions of vLLM?"
+    },
+    {
+      "question_id": "fb30fcd2-af86-4db3-8da5-41b0b9484493",
+      "question": "Why does vLLM shard and quantize model weights during initialization rather than after initialization?"
+    },
+    {
+      "question_id": "e33ae115-d23b-4ed3-97c2-2f3830d4b454",
+      "question": "How does vLLM solve the problem of writing unit tests for individual components when every component needs a complete config object?"
+    },
+    {
+      "question_id": "aa427806-5e00-42f9-a749-439632d75408",
+      "question": "What port does Open WebUI run on when deployed with vLLM using Docker?"
+    },
+    {
+      "question_id": "0b7824ab-ae32-479f-8ffe-803bb5937c58",
+      "question": "What is the CLI command to run batch processing in vLLM?"
+    },
+    {
+      "question_id": "74f5d5ab-6c34-415b-983a-471dbe7bf36e",
+      "question": "How do you register a model that is not pre-registered in vLLM?"
+    },
+    {
+      "question_id": "55eb1d1f-3abd-4dba-b926-835bf2234ff4",
+      "question": "What method is used to register a custom model in vLLM's ModelRegistry?"
+    },
+    {
+      "question_id": "a2a1ee47-0520-47a9-9dca-3fc4799c1217",
+      "question": "What is the maximum memory reduction achievable with FP8 quantization in vLLM?"
+    },
+    {
+      "question_id": "9f62e337-ad58-4a5c-bdb8-e743c012ba08",
+      "question": "What quantization scheme does vLLM recommend for FP8 quantization targeting Linear layers?"
+    },
+    {
+      "question_id": "153ffe7d-3e32-4315-881f-0161dee4f2c8",
+      "question": "What argument should be included when running lm_eval evaluations with quantized models in vLLM?"
+    },
+    {
+      "question_id": "bd4f96c1-43a6-4428-a326-5c890cdc0f7b",
+      "question": "How do you enable FP8 dynamic quantization in vLLM?"
+    },
+    {
+      "question_id": "4e819f94-2ffb-4b67-be2e-507159580497",
+      "question": "What memory requirement limitation exists when using FP8 quantization in vLLM?"
+    }
+  ]
+}
